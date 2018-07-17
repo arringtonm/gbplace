@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>
-      {msg}
     </h1>
     <img src="../assets/gbplacemakinglogolofi.png">
   </div>
@@ -11,7 +10,6 @@
 export default {
   name: "Header",
   props: {
-    msg: String
   }
 }
 </script>
