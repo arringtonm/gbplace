@@ -25,6 +25,8 @@ export default {
   top: 0px;
   position: relative;
   margin-bottom: 50px;
+  // border-bottom: 12px solid #aaaaaa;
+
 }
 img {
   width: 100%;
@@ -33,7 +35,7 @@ img {
   background: rgba(00, 00, 00, 0.5);
   width: 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: 7px;
   height: 80px;
   display: flex;
   flex-direction: column;
