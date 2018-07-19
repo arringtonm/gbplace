@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Carousel/>
+    <Carousel image="images/carousel-dosha.jpg"/>
     <div class="block">
       <h3>
         Transformative experience you can count on.

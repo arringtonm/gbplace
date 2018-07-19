@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
     <div class="carousel-container">
-      <img src="../assets/carousel-dosha.jpg">
+      <img :src="image">
+      <!-- {{ image }} -->
       <div class="overlay">
         <p>"GB’s work changed the face of transit and land use in Portland"</p>
         <p>Presidential Design Award, The White House, Westside Light Rail</p>
@@ -12,10 +13,10 @@
 
 <script>
 export default {
-  name: "Carousel"
-  // props: {
-  //   msg: String
-  // }
+  name: "Carousel",
+  props: {
+    image: String
+  }
 };
 </script>
 
@@ -26,7 +27,6 @@ export default {
   position: relative;
   margin-bottom: 50px;
   // border-bottom: 12px solid #aaaaaa;
-
 }
 img {
   width: 100%;
