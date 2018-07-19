@@ -4,6 +4,7 @@ import Home from "./views/Home.vue";
 import Services from "./views/Services.vue";
 import Contact from "./views/Contact.vue";
 import Projects from "./views/Projects.vue";
+import Team from "./views/Team.vue";
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
       path: "/projects",
       name: "projects",
       component: Projects
+    },
+    {
+      path: "/team",
+      name: "team",
+      component: Team
     }
   ]
 });
