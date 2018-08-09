@@ -7,7 +7,7 @@
       </h3>
       <p>GB Arrington is one of the world’s most respected innovators in Transit Oriented development (TOD). GB’s focus is in strategically forging the link between transit and development to catalyze community revitalization, resiliency and place making. GB brings the insights and knowledge garnered from four decades of successfully shaping public policies, land use plans and transit projects at the scale of the region, the corridor and individual sites.</p>
     </div>
-    <MyProjects :project="bart"/>
+    <MyProjects :project="denver"/>
   </div>
 </template>
 

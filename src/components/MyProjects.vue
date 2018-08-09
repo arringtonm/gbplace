@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="project.imagepath">
+    <img :src="project.imagepath" class="project">
     <span v-if="project.imagecredit">{{ project.imagecredit }}</span>
     <h2>{{ project.title }}</h2>
     <span class="titlelong">{{ project.titlelong }}</span><br>
@@ -38,5 +38,8 @@ export default {
 .titlelong {
   font-weight: bold;
   margin-right: 10px;
+}
+img.project {
+  width: 100vw;
 }
 </style>
