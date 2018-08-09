@@ -15,7 +15,8 @@
 export default {
   name: "Carousel",
   props: {
-    image: String
+    image: String,
+    project: String
   }
 };
 </script>

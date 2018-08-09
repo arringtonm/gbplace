@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "projects ",
+  name: "projects",
 };
 // var projectBart = {
 //   title: 'BART Stations',
