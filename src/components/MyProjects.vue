@@ -1,12 +1,13 @@
 <template>
   <div>
+    <div class="block">
+      <h3>{{ project.title }}</h3>
+      <span class="titlelong">{{ project.titlelong }}</span><br>
+      <span class="type">{{ project.type }}</span>
+      <p class="content">{{ project.content }}</p>
+    </div>
     <img :src="project.imagepath" class="project">
     <span v-if="project.imagecredit">{{ project.imagecredit }}</span>
-    <h2>{{ project.title }}</h2>
-    <span class="titlelong">{{ project.titlelong }}</span><br>
-    <span class="type">{{ project.type }}</span>
-    <p class="content">{{ project.content }}</p>
-    {{  }}
   </div>
 </template>
 

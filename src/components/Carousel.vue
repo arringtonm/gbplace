@@ -26,7 +26,7 @@ export default {
 .carousel-container {
   top: 0px;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   // border-bottom: 12px solid #aaaaaa;
 }
 img {
