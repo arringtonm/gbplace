@@ -6,3 +6,9 @@
     </p>
   </div>
 </template>
+
+<style>
+img.project {
+  width: 100vw
+}
+</style>

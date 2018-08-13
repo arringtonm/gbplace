@@ -3,13 +3,18 @@
     <div class="header">
       <div class="header-interior">
         <img src="./assets/gbplacemakinglogolofi.png">
-
-        <div id="nav">
+        <!-- <div id="nav">
           <router-link to="/">Home</router-link> |
           <router-link to="/services">Services</router-link> |
           <router-link to="/projects">Projects</router-link> |
           <router-link to="/team">Team</router-link> |
           <router-link to="/contact">Contact</router-link>
+        </div> -->
+        <div id="nav">
+          <a href="#">Home</a> |
+          <a href="#services">Services</a> |
+          <a href="#projects">Projects</a> |
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -26,21 +31,9 @@
   margin: 0px;
 }
 .header {
-  // border-top: 12px solid #aaaaaa;
-  // position: fixed;
   top: 0px;
-  // height: 100px;
-  // z-index: 5000;
-  // background: linear-gradient(to right, white, rgba(255,255,255,0.5)) ;
-  // background: linear-gradient(to right, #aaaaaa 50%, #ffffff 50%);
   background-color: white;
   border-bottom: 1px solid #aaaaaa;
-  // width: 1000px;
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: space-between;
-
   .header-interior {
     background-color: white;
     width: 1000px;

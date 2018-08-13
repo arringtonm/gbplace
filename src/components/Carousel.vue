@@ -2,7 +2,6 @@
   <div class="hello">
     <div class="carousel-container">
       <img :src="image">
-      <!-- {{ image }} -->
       <div class="overlay">
         <p>"GB’s work changed the face of transit and land use in Portland"</p>
         <p>Presidential Design Award, The White House, Westside Light Rail</p>
@@ -21,13 +20,11 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .carousel-container {
   top: 0px;
   position: relative;
   margin-bottom: 80px;
-  // border-bottom: 12px solid #aaaaaa;
 }
 img {
   width: 100%;

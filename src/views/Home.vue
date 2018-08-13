@@ -7,18 +7,27 @@
       </h3>
       <p>GB Arrington is one of the world’s most respected innovators in Transit Oriented development (TOD). GB’s focus is in strategically forging the link between transit and development to catalyze community revitalization, resiliency and place making. GB brings the insights and knowledge garnered from four decades of successfully shaping public policies, land use plans and transit projects at the scale of the region, the corridor and individual sites.</p>
     </div>
-    <div v-for="project in projects" class="projects">
-      <!-- <a @click="select(project)"> -->
-        <!-- <img :src="project.imagepath" class="cropped" :click="selectedProject = project"> -->
-        <img :src="project.imagepath" class="cropped" v-on:click="select(project)">
-
-        <div class="projects-overlay">
-          {{ project.title }}
-        </div>
-      <!-- </a> -->
+    <img src="../assets/MinnTargetLRT+Northstar296.jpg" class="project">
+    <div class="block upmargin" id="services">
+      <h3>Transit Designed for Development</h3>
+      <p>GB Place Making brings a proven partner to help ensure success linking transit design and city shaping. GB’s groundbreaking experience on transit projects balances place making, great transit, TOD, seamless community integration and private development to create communities that are livable, walkable and vibrant. GB has shaped transit design in more than two dozen communities spanning every major mode – bus rapid transit, streetcar, light rail, commuter rail, heavy rail, and high speed rail.
+      </p>
     </div>
-
-    <MyProjects :project="selectedProject"/>
+    <div class="projects-holder">
+      <div v-for="project in projects" class="projects">
+        <img :src="project.imagepath" class="cropped" v-on:click="selectProject(project)">
+        <div class="projects-overlay">
+          <!-- <p>{{ project.title }}</p> -->
+        </div>
+      </div>
+    </div>
+    <MyProjects :project="selectedProject" id="projects"/>
+    <div id="contact">
+      <div class="block upmargin">
+        <h3>Contact</h3>
+        <a href="mailto:arrington.gb@gmail.com">arrington.gb@gmail.com</a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -32,16 +41,16 @@ export default {
     Carousel,
     MyProjects
   },
+  created: function() {
+    this.selectedProject = this.projects.bart
+  },
   methods: {
-    select: function(project) {
-      // alert('hi');
+    selectProject: function(project) {
       this.selectedProject = project;
     }
   },
   data: function() {
     return {
-
-
       selectedProject: Object,
       projects: {
         bart: {
@@ -121,23 +130,15 @@ export default {
   margin-right: auto;
   margin-bottom: 80px;
 }
-.home {
-  // width: 1000px;
-  // width: minmax(50px,150px);
-  // height: 100vh;
-  // width: 100vw;
-  // margin-left: auto;
-  // margin-right: auto;
+.upmargin {
+  margin-top: 80px;
 }
 h3 {
   margin-bottom: 20px;
 }
-
 img.cropped {
   border: 0px;
   width: 100%;
-  // height: 12vw;
-  object-fit: cover;
   filter: brightness(80%) grayscale(70%);
   transition: filter 500ms ease-in-out;
   margin-top: 0px;
@@ -146,22 +147,21 @@ img.cropped {
     filter: grayscale(0%) brightness(100%);
   }
 }
+img.project {
+  width: 100vw;
+  // box-shadow: 0px 10px 20px 0px rgba(00, 00, 00, 0.25);
+}
 .projects {
   width: 25vw;
   display: inline-block;
-  padding-bottom: none;
-  // top: 0px;
   position: relative;
-  // margin-bottom: 80px;
-  // border-bottom: 12px solid #aaaaaa;
+}
+.projects-holder {
+  margin-bottom: 80px;
 }
 .projects-overlay {
-  z-index: -1;
   background: rgba(00, 00, 00, 0.5);
   width: 25vw;
-  position: absolute;
-  bottom: 7px;
-  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
