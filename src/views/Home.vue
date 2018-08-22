@@ -131,7 +131,7 @@ export default {
           id: 2
         }
        ]
-    }
+    };
   }
 };
 </script>
@@ -187,5 +187,4 @@ img.project {
     z-index: 500;
   }
 }
-
 </style>

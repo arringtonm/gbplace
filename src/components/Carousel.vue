@@ -9,8 +9,10 @@
     </div>
   </div>
 </template> -->
+
+<!-- EDIT TO GET RID OF SWAP, ADD TIMER, REPLACE CONTENT AND KEEP TRANSITION FADE -->
 <template>
-  <div class='carousel-container'>
+  <div class='carousel-container carousel-view'>
     <transition-group
       class='carousel'
       tag="div">
@@ -37,13 +39,13 @@ export default {
     slides: Array
   },
   methods: {
-    slideNext () {
-      const first = this.slides.shift()
-      this.slides = this.slides.concat(first)
+    slideNext() {
+      const first = this.slides.shift();
+      this.slides = this.slides.concat(first);
     },
-    slidePrevious () {
-      const last = this.slides.pop()
-      this.slides = [last].concat(this.slides)
+    slidePrevious() {
+      const last = this.slides.pop();
+      this.slides = [last].concat(this.slides);
     }
   }
 };
