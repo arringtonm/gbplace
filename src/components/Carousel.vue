@@ -9,10 +9,8 @@
     </div>
   </div>
 </template> -->
-
-
 <template>
-  <div class='carousel-view'>
+  <div class='carousel-container'>
     <transition-group
       class='carousel'
       tag="div">
@@ -20,12 +18,13 @@
         v-for="slide in slides"
         class='slide'
         :key="slide.id">
-        <h4> {{ slide.title }} </h4>
+        <img :src="slide.image">
+        <p>{{ slide.caption }}</p>
       </div>
     </transition-group>
     <div class='carousel-controls'>
-      <button class='carousel-controls__button' @click="previous">prev</button>
-      <button class='carousel-controls__button' @click="next">next</button>
+      <button class='carousel-controls__button' @click="slidePrevious">prev</button>
+      <button class='carousel-controls__button' @click="slideNext">next</button>
     </div>
   </div>
 </template>
@@ -34,8 +33,18 @@
 export default {
   name: "Carousel",
   props: {
-    image: String,
-    project: String
+    project: String,
+    slides: Array
+  },
+  methods: {
+    slideNext () {
+      const first = this.slides.shift()
+      this.slides = this.slides.concat(first)
+    },
+    slidePrevious () {
+      const last = this.slides.pop()
+      this.slides = [last].concat(this.slides)
+    }
   }
 };
 </script>
@@ -62,5 +71,34 @@ img {
   p {
     color: white;
   }
+}
+.carousel-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.slide {
+  // flex: 0 0 20em;
+  // height: 20em;
+  // margin: 1em;
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  // align-items: center;
+  // border: 0.1em dashed #000;
+  // border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+.slide:first-of-type {
+  opacity: 0;
+}
+.slide:last-of-type {
+  opacity: 0;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <Carousel image="images/carousel-dosha.jpg"/>
+    <!-- <Carousel image="images/carousel-dosha.jpg"/> -->
+    <Carousel :slides="slides"/>
     <div class="block">
       <h3>
         Transformative experience you can count on.
@@ -117,7 +118,19 @@ export default {
           imagepath: 'images/BeachSunSetdabs171a_edited-1.jpg',
           imagecredit: false
         }
-      }
+      },
+      slides: [
+        {
+          image: "images/carousel-dosha.jpg",
+          caption: "GB’s work changed the face of transit and land use in Portland",
+          id: 1
+        },
+        {
+          image: "images/RoundTitleslide1.jpg",
+          caption: "This is placeholder text",
+          id: 2
+        }
+       ]
     }
   }
 };
