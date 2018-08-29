@@ -20,7 +20,7 @@
         v-for="slide in slides"
         class='slide'
         :key="slide.id">
-        <img :src="slide.image">
+        <img :src="slide.image" class="slide-image">
         <p>{{ slide.caption }}</p>
       </div>
     </transition-group>
@@ -97,10 +97,13 @@ img {
   // border-radius: 50%;
   transition: transform 0.3s ease-in-out;
 }
-.slide:first-of-type {
-  opacity: 0;
-}
-.slide:last-of-type {
-  opacity: 0;
-}
+// .slide-image {
+//   width: 100vw;
+// }
+// .slide:first-of-type {
+//   opacity: 0;
+// }
+// .slide:last-of-type {
+//   opacity: 0;
+// }
 </style>
