@@ -15,7 +15,7 @@
       </p>
     </div>
     <div class="projects-holder">
-      <div v-for="project in projects" class="projects">
+      <div v-for="project in projects" class="projects" :key="project.key">
         <img :src="project.imagepath" class="cropped" v-on:click="selectProject(project)" v-bind:class="{ selected: project == selectedProject }">
         <!--  v-bind:key="project.key"
               v-bind:class="{ selected: project == this.selectedProject }"
@@ -124,7 +124,7 @@ export default {
           title: "Westside Subway",
           titlelong: "Westside Subway Los Angeles",
           type: "Transit Designed for Development",
-          content: 'Los Angeles\’s top transit priority, the "subway to the sea", has been an enduring dream for decades. GB helped to shape the project’s design and defined a multi-year path for Metro and the cities of Los Angeles and Beverly Hills to capture the land use benefits of this multi-billion dollar investment. Scenario testing helped to frame TOD planning. GB prepared a station urban design report, recommendations on station locations and portal placement, assessed local plans and policies for transit-friendliness, and developed a TOD program for the corridor. GB also oversaw the preparation of land use and economic development New Starts templates that contributed to the project getting a high rating from the federal government and receiving a Full Funding Grant Agreement in 2014.',
+          content: "Los Angeles’s top transit priority, the \"subway to the sea\", has been an enduring dream for decades. GB helped to shape the project’s design and defined a multi-year path for Metro and the cities of Los Angeles and Beverly Hills to capture the land use benefits of this multi-billion dollar investment. Scenario testing helped to frame TOD planning. GB prepared a station urban design report, recommendations on station locations and portal placement, assessed local plans and policies for transit-friendliness, and developed a TOD program for the corridor. GB also oversaw the preparation of land use and economic development New Starts templates that contributed to the project getting a high rating from the federal government and receiving a Full Funding Grant Agreement in 2014.",
           imagepath: "images/BeachSunSetdabs171a_edited-1.jpg",
           imagecredit: false,
           key: 8
