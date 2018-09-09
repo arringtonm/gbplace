@@ -10,6 +10,10 @@
     </div>
     <img src="../assets/MinnTargetLRT+Northstar296.jpg" class="project">
     <div class="block upmargin" id="services">
+
+      <h3>Transit Oriented Development</h3>
+
+      
       <h3>Transit Designed for Development</h3>
       <p>GB Place Making brings a proven partner to help ensure success linking transit design and city shaping. GB’s groundbreaking experience on transit projects balances place making, great transit, TOD, seamless community integration and private development to create communities that are livable, walkable and vibrant. GB has shaped transit design in more than two dozen communities spanning every major mode – bus rapid transit, streetcar, light rail, commuter rail, heavy rail, and high speed rail.
       </p>
@@ -136,11 +140,11 @@ export default {
           caption: "GB’s work changed the face of transit and land use in Portland",
           id: 1
         },
-        {
-          image: "images/RoundTitleslide1.jpg",
-          caption: "This is placeholder text",
-          id: 2
-        }
+        // {
+        //   image: "images/RoundTitleslide1.jpg",
+        //   caption: "This is placeholder text",
+        //   id: 2
+        // }
       ]
     };
   }
