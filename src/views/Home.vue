@@ -18,9 +18,12 @@
       <p>GB Place Making brings a proven partner to help ensure success linking transit design and city shaping. GB’s groundbreaking experience on transit projects balances place making, great transit, TOD, seamless community integration and private development to create communities that are livable, walkable and vibrant. GB has shaped transit design in more than two dozen communities spanning every major mode – bus rapid transit, streetcar, light rail, commuter rail, heavy rail, and high speed rail.
       </p>
     </div>
+
+<!-- TOD projects  -->
+
     <div class="projects-holder">
       <div v-for="project in projectsTOD" class="projects" :key="project.key">
-        <img :src="project.imagepath" class="cropped" v-on:click="selectProject(project)" v-bind:class="{ selected: project == selectedProject }">
+        <img :src="project.imagepath" class="cropped" v-on:click="selectTODProject(project)" v-bind:class="{ selected: project == selectedTODProject }">
         <!--  v-bind:key="project.key"
               v-bind:class="{ selected: project == this.selectedProject }"
        -->
@@ -29,7 +32,24 @@
         </div>
       </div>
     </div>
-    <MyProjects :project="selectedProject" id="projects"/>
+    <MyProjects :project="selectedTODProject" id="projectsTOD"/>
+
+<!-- TDD projects -->
+
+    <div class="projects-holder">
+      <div v-for="project in projectsTDD" class="projects" :key="project.key">
+        <img :src="project.imagepath" class="cropped" v-on:click="selectTDDProject(project)" v-bind:class="{ selected: project == selectedTDDProject }">
+        <!--  v-bind:key="project.key"
+              v-bind:class="{ selected: project == this.selectedProject }"
+       -->
+        <div class="projects-overlay">
+          <!-- <p>{{ project.title }}</p> -->
+        </div>
+      </div>
+    </div>
+    <MyProjects :project="selectedTDDProject" id="projectsTDD"/>
+
+
     <div id="contact">
       <div class="block upmargin">
         <h3>Contact</h3>
@@ -50,16 +70,22 @@ export default {
     MyProjects
   },
   created: function() {
-    this.selectedProject = this.projects.bart
+    this.selectedTODProject = this.projectsTOD.tysons;
+    this.selectedTDDProject = this.projectsTDD.bart;
   },
   methods: {
-    selectProject: function(project) {
-      this.selectedProject = project;
+    selectTODProject: function(project) {
+      this.selectedTODProject = project;
+    },
+    selectTDDProject: function(project) {
+      this.selectedTDDProject = project;
     }
+
   },
   data: function() {
     return {
-      selectedProject: Object,
+      selectedTODProject: Object,
+      selectedTDDProject: Object,
       projectsTOD: {
         tysons: {
           title: "Tysons Corner",
@@ -115,14 +141,14 @@ export default {
           key: 6,
         }
       },
-      projectsTTT: {
+      projectsTDD: {
         bart: {
           title: "BART Stations",
           titlelong: "BART 21st Century Stations",
           content: "GB has a track record of helping clients move in a new direction in response to changing needs and trends. For BART, GB developed a transformational strategy guiding how BART connects to the community and creates people places while updating and modernizing its facilities. With its roots in the 1960s BART was designed to serve the bygone needs of a different era. Meeting the contemporary needs of tomorrow’s riders and a changing region required breaking the old mold. Twenty-first century stations use TOD and place making to help drive change while accomplishing three objectives: making transit work, connecting transit to the community and creating places people want to be. GB came up with a design toolbox and evolutionary station prototypes that provide practical and aspirational examples of how BART can evolve into a 21st century system.",
           imagepath: "images/ART.jpg",
           imagecredit: false,
-          key: 1
+          key: 7
         },
         denver: {
           title: "Denver FasTracks",
@@ -130,7 +156,7 @@ export default {
           content: "GB balances people moving and city shaping in transit design to optimize transit operations, community fit, urban design and economic development. Working with the Denver RTD design team, cities, developers and landowners, GB applied development oriented transit (DOT) principles to the entire 119 mile $4.7 Billion FasTracks system. Week long interactive design charrettes were held for each corridor. Station designs were modified and station locations were shifted to enable the creation of transit-oriented communities around FasTracks 53 stations. GB’s work with DOT has reshaped major transit projects across the United States now in operation or with detailed designs for Portland, Los Angeles, Phoenix, Minneapolis, Baltimore, Honolulu and Ft Lauderdale.",
           imagepath: "images/West_0006.jpg",
           imagecredit: false,
-          key: 2
+          key: 8
         },
         target: {
           title: "Target Field",
@@ -138,7 +164,7 @@ export default {
           content: "Understanding the intersection of making transit work and place making can lead to critical design breakthroughs. In Minneapolis, GB led urban design workshops that resulted in changing the project design to realign the tracks to open the station up to the neighborhood, activate the public realm and to help the station spur growth in the North Loop. The $85m sweeping multi-level Target Field Station opened in 2014 and includes a park, jumbo screen, retail stores, a public plaza and a major development parcel as part of the rail hub next to Target Field.",
           imagepath: "images/InterchangeMay2014.jpg",
           imagecredit: false,
-          key: 3
+          key: 9
         },
         westside: {
           title: "Westside Subway",
@@ -146,7 +172,7 @@ export default {
           content: "Los Angeles’s top transit priority, the \"subway to the sea\", has been an enduring dream for decades. GB helped to shape the project’s design and defined a multi-year path for Metro and the cities of Los Angeles and Beverly Hills to capture the land use benefits of this multi-billion dollar investment. Scenario testing helped to frame TOD planning. GB prepared a station urban design report, recommendations on station locations and portal placement, assessed local plans and policies for transit-friendliness, and developed a TOD program for the corridor. GB also oversaw the preparation of land use and economic development New Starts templates that contributed to the project getting a high rating from the federal government and receiving a Full Funding Grant Agreement in 2014.",
           imagepath: "images/BeachSunSetdabs171a_edited-1.jpg",
           imagecredit: false,
-          key: 4
+          key: 10
         }
       },
       slides: [
