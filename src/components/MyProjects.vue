@@ -1,14 +1,21 @@
 <template>
-  <div>
-    <div class="block">
+  <div class="block projectblock">
+    <div class="left">
       <h3>{{ project.title }}</h3>
       <span class="titlelong">{{ project.titlelong }}</span><br>
       <span class="type">{{ project.type }}</span>
       <p class="content">{{ project.content }}</p>
+      <ul>
+        <li v-for="item in project.bullets">
+          {{ item }}
+        </li>
+      </ul>
     </div>
-    <img :src="project.imagepath" class="project">
-    <!-- v:bind for selected image -->
-    <span v-if="project.imagecredit">{{ project.imagecredit }}</span>
+    <div class="right">
+      <img :src="project.imagepath">
+      <!-- v:bind for selected image -->
+      <span v-if="project.imagecredit">{{ project.imagecredit }}</span>
+    </div>
   </div>
 </template>
 
@@ -27,6 +34,29 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+li {
+  margin-left: 15px;
+}
+.projectinfo {
+  display: flex;
+  flex-direction: row;
+}
+.projectblock {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  img {
+    width: 600px;
+  }
+  .left {
+    width: 300px;
+    margin-right: 40px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .titlelong {
   font-weight: bold;
   margin-right: 10px;

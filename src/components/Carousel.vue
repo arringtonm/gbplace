@@ -24,10 +24,10 @@
         <p>{{ slide.caption }}</p>
       </div>
     </transition-group>
-    <div class='carousel-controls'>
+    <!-- <div class='carousel-controls'>
       <button class='carousel-controls__button' @click="slidePrevious">prev</button>
       <button class='carousel-controls__button' @click="slideNext">next</button>
-    </div>
+    </div> -->
   </div>
 </template>
 

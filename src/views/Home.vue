@@ -209,7 +209,7 @@ img.cropped {
   border: 0px;
   width: 100%;
   filter: brightness(80%) grayscale(70%);
-  transition: filter 500ms ease-in-out;
+  // transition: all 1500ms ease-in-out;
   margin-top: 0px;
   padding-bottom: 0px;
   &:hover {
@@ -226,25 +226,25 @@ img.project {
   // box-shadow: 0px 10px 20px 0px rgba(00, 00, 00, 0.25);
 }
 .projects {
-  width: 25vw;
+  width: 33.1vw;
   display: inline-block;
-  position: relative;
+  // position: relative;
 }
 .projects-holder {
   margin-bottom: 80px;
 }
-.projects-overlay {
-  background: rgba(00, 00, 00, 0.5);
-  width: 25vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  p {
-    color: white;
-  }
-  &:hover {
-    z-index: 500;
-  }
-}
+// .projects-overlay {
+//   background: rgba(00, 00, 00, 0.5);
+//   width: 25vw;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   p {
+//     color: white;
+//   }
+//   &:hover {
+//     z-index: 500;
+//   }
+// }
 </style>
