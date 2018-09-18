@@ -25,7 +25,7 @@
       <div v-for="project in projectsTOD" class="projects" :key="project.key">
         <img :src="project.imagepath" class="cropped" v-on:click="selectTODProject(project)" v-bind:class="{ selected: project == selectedTODProject }">
 
-        <p v-on:click="selectTODProject(project)" class="fakelink" v-bind:class="{ selectedtext: project == selectedTODProject }">{{ project.titlelong }}</p>
+        <p><span v-on:click="selectTODProject(project)" class="fakelink" v-bind:class="{ fakelinkselected: project == selectedTODProject }">{{ project.titlelong }}</span></p>
         <!--  v-bind:key="project.key"
               v-bind:class="{ selected: project == this.selectedProject }"
        -->
@@ -235,6 +235,15 @@ img.project {
 .projects-holder {
   margin-bottom: 80px;
 }
+
+.fakelink {
+  font-weight: bold;
+  margin-bottom: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 // .projects-overlay {
 //   background: rgba(00, 00, 00, 0.5);
 //   width: 25vw;
