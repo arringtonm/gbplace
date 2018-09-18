@@ -24,6 +24,8 @@
     <div class="projects-holder">
       <div v-for="project in projectsTOD" class="projects" :key="project.key">
         <img :src="project.imagepath" class="cropped" v-on:click="selectTODProject(project)" v-bind:class="{ selected: project == selectedTODProject }">
+
+        <p v-on:click="selectTODProject(project)" class="fakelink" v-bind:class="{ selectedtext: project == selectedTODProject }">{{ project.titlelong }}</p>
         <!--  v-bind:key="project.key"
               v-bind:class="{ selected: project == this.selectedProject }"
        -->
