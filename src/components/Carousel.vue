@@ -12,9 +12,9 @@
 
 <!-- EDIT TO GET RID OF SWAP, ADD TIMER, REPLACE CONTENT AND KEEP TRANSITION FADE -->
 <template>
-  <div class='carousel-container carousel-view'>
+  <div class="carousel-container carousel-view">
     <transition-group
-      class='carousel'
+      class="carousel"
       tag="div">
       <div
         v-for="slide in slides"
@@ -57,7 +57,7 @@ export default {
   // position: relative;
   // display: flex;
   // flex-direction: column;
-  // margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 img {
   // width: 100vh;
