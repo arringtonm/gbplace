@@ -1,38 +1,9 @@
-<!-- <template>
-  <div class="hello">
-    <div class="carousel-container">
-      <img :src="image">
-      <div class="overlay">
-        <p>"GB’s work changed the face of transit and land use in Portland"</p>
-        <p>Presidential Design Award, The White House, Westside Light Rail</p>
-      </div>
-    </div>
-  </div>
-</template> -->
-
-<!-- EDIT TO GET RID OF SWAP, ADD TIMER, REPLACE CONTENT AND KEEP TRANSITION FADE -->
 <template>
   <div class="carousel-container carousel-view">
-    <!-- <transition
-      class="carousel"
-      tag="div"> -->
-      <transition name="fade">
-      <!-- <div
-        v-for="slide in slides"
-        class='slide'
-        :key="slide.id">
-        <img :src="slide.image" class="slide-image">
-        <p>{{ slide.caption }}</p>
-      </div> -->
+    <transition name="fade">
       <img :src="slides[this.selectedSlide].image" alt="" :key="slides[this.selectedSlide].id" class="slide-image" >
     </transition>
-
     <p>{{ slides[selectedSlide].caption }}</p>
-
-    <!-- <div class='carousel-controls'>
-      <button class='carousel-controls__button' @click="slidePrevious">prev</button>
-      <button class='carousel-controls__button' @click="slideNext">next</button>
-    </div> -->
   </div>
 </template>
 
@@ -61,10 +32,6 @@ export default {
 
 <style scoped lang="scss">
 .carousel-container {
-  // top: 0px;
-  // position: relative;
-  // display: flex;
-  // flex-direction: column;
   margin-bottom: 80px;
 }
 img {
@@ -83,7 +50,7 @@ img {
 }
 .slide {
   opacity: 1;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   // flex: 0 0 20em;
   // height: 20em;
   // margin: 1em;

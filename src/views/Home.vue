@@ -215,7 +215,6 @@ img.cropped {
   border: 0px;
   width: 100%;
   filter: brightness(80%) grayscale(70%);
-  // transition: all 1500ms ease-in-out;
   margin-top: 0px;
   padding-bottom: 0px;
   &:hover {
@@ -227,16 +226,13 @@ img.cropped.selected {
   filter: grayscale(0%) brightness(100%);
   cursor: pointer;
 }
-img.project {
-  width: 100vw;
-  // box-shadow: 0px 10px 20px 0px rgba(00, 00, 00, 0.25);
-}
 .projects {
-  width: 33.1vw;
+  width: 33.333%;
   display: inline-block;
   // position: relative;
 }
 .projects-holder {
+  width: 100vw;
   margin-bottom: 80px;
 }
 
@@ -247,19 +243,4 @@ img.project {
     cursor: pointer;
   }
 }
-
-// .projects-overlay {
-//   background: rgba(00, 00, 00, 0.5);
-//   width: 25vw;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   p {
-//     color: white;
-//   }
-//   &:hover {
-//     z-index: 500;
-//   }
-// }
 </style>
