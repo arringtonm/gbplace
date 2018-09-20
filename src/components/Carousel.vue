@@ -1,7 +1,9 @@
 <template>
   <div class="carousel-container carousel-view">
     <transition name="fade">
-      <img :src="slides[this.selectedSlide].image" alt="" :key="slides[this.selectedSlide].id" class="slide-image" >
+      <!-- <img :src="slides[this.selectedSlide].image" alt="" :key="slides[this.selectedSlide].id" class="slide-image" > -->
+      <img :src="slides[this.selectedSlide].image" alt="" class="slide-image" >
+      <span> {{ slides[this.selectedSlide].image }} </span>
     </transition>
     <p>{{ slides[selectedSlide].caption }}</p>
   </div>
@@ -63,6 +65,7 @@ img {
 }
 .slide-image {
   width: 100vw;
+  border: 1px solid red;
 }
 // .slide:first-of-type {
 //   opacity: 0;
@@ -70,8 +73,9 @@ img {
 // .slide:last-of-type {
 //   opacity: 0;
 // }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
