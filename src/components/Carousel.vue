@@ -13,17 +13,22 @@
 <!-- EDIT TO GET RID OF SWAP, ADD TIMER, REPLACE CONTENT AND KEEP TRANSITION FADE -->
 <template>
   <div class="carousel-container carousel-view">
-    <transition-group
+    <!-- <transition
       class="carousel"
-      tag="div">
-      <div
+      tag="div"> -->
+      <transition name="fade">
+      <!-- <div
         v-for="slide in slides"
         class='slide'
         :key="slide.id">
         <img :src="slide.image" class="slide-image">
         <p>{{ slide.caption }}</p>
-      </div>
-    </transition-group>
+      </div> -->
+      <img :src="slides[this.selectedSlide].image" alt="" :key="slides[this.selectedSlide].id" class="slide-image" >
+    </transition>
+
+    <p>{{ slides[selectedSlide].caption }}</p>
+
     <!-- <div class='carousel-controls'>
       <button class='carousel-controls__button' @click="slidePrevious">prev</button>
       <button class='carousel-controls__button' @click="slideNext">next</button>
@@ -38,15 +43,18 @@ export default {
     project: String,
     slides: Array
   },
+  data: function() {
+    return {
+      selectedSlide: 0
+    };
+  },
   methods: {
-    slideNext() {
-      // const first = this.slides.shift();
-      // this.slides = this.slides.concat(first);
-    },
-    slidePrevious() {
-      // const last = this.slides.pop();
-      // this.slides = [last].concat(this.slides);
+    switchSlide: function() {
+      this.selectedSlide = this.selectedSlide == 0 ? 1 : 0;
     }
+  },
+  created: function() {
+    // setInterval(()=>{ this.switchSlide() }, 5000)
   }
 };
 </script>
@@ -95,4 +103,10 @@ img {
 // .slide:last-of-type {
 //   opacity: 0;
 // }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 </style>

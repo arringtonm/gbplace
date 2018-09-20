@@ -89,6 +89,7 @@ export default {
   },
   data: function() {
     return {
+      // selectedSlide: 0,
       selectedTODProject: Object,
       selectedTDDProject: Object,
       projectsTOD: {
@@ -186,11 +187,11 @@ export default {
           caption: "GB’s work changed the face of transit and land use in Portland",
           id: 1
         },
-        // {
-        //   image: "images/RoundTitleslide1.jpg",
-        //   caption: "This is placeholder text",
-        //   id: 2
-        // }
+        {
+          image: "images/RoundTitleslide1.jpg",
+          caption: "This is placeholder text",
+          id: 2
+        }
       ]
     };
   }
