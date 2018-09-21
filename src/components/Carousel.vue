@@ -1,9 +1,10 @@
 <template>
   <div class="carousel-container carousel-view">
     <transition name="fade">
-      <!-- <img :src="slides[this.selectedSlide].image" alt="" :key="slides[this.selectedSlide].id" class="slide-image" > -->
-      <img :src="slides[this.selectedSlide].image" alt="" class="slide-image" >
-      <span> {{ slides[this.selectedSlide].image }} </span>
+      <img :src="slides[this.selectedSlide].image" alt="" class="slide-image">
+      <!-- <img v-if="this.selectedSlide == 0" :src="slides[0].image" alt="" class="slide-image" :key="0">
+      <img v-else-if="this.selectedSlide == 1" :src="slides[1].image" alt="" class="slide-image" :key="1">
+      <img v-else-if="this.selectedSlide == 2" :src="slides[2].image" alt="" class="slide-image" :key="2"> -->
     </transition>
     <p>{{ slides[selectedSlide].caption }}</p>
   </div>
@@ -23,11 +24,12 @@ export default {
   },
   methods: {
     switchSlide: function() {
-      this.selectedSlide = this.selectedSlide == 0 ? 1 : 0;
+      if (this.selectedSlide == 2) { this.selectedSlide = 0 }
+      else { this.selectedSlide++ }
     }
   },
   created: function() {
-    // setInterval(()=>{ this.switchSlide() }, 5000)
+    setInterval(()=>{ this.switchSlide() }, 5000)
   }
 };
 </script>
@@ -35,9 +37,6 @@ export default {
 <style scoped lang="scss">
 .carousel-container {
   margin-bottom: 80px;
-}
-img {
-  // width: 100vh;
 }
 .carousel-view {
   display: flex;
@@ -47,32 +46,10 @@ img {
 .carousel {
   display: flex;
   justify-content: center;
-  // align-items: center;
-  // overflow: hidden;
-}
-.slide {
-  opacity: 1;
-  transition: transform 0.5s ease-in-out;
-  // flex: 0 0 20em;
-  // height: 20em;
-  // margin: 1em;
-  // width: 100vh;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // border: 0.1em dashed #000;
-  // border-radius: 50%;
 }
 .slide-image {
   width: 100vw;
-  border: 1px solid red;
 }
-// .slide:first-of-type {
-//   opacity: 0;
-// }
-// .slide:last-of-type {
-//   opacity: 0;
-// }
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
