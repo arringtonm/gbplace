@@ -6,7 +6,7 @@
       <span class="type">{{ project.type }}</span>
       <p class="content">{{ project.content }}</p>
       <ul>
-        <li v-for="item in project.bullets">
+        <li v-for="item in project.bullets" :key="item">
           {{ item }}
         </li>
       </ul>
@@ -26,8 +26,7 @@ export default {
     project: Object
   },
   data: function() {
-    return {
-    };
+    return {};
   }
 };
 </script>

@@ -33,7 +33,7 @@
 .header {
   top: 0px;
   background-color: white;
-  border-bottom: 1px solid #aaaaaa;
+  // border-bottom: 1px solid #aaaaaa;
   .header-interior {
     background-color: white;
     width: 1000px;
