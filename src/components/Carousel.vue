@@ -33,7 +33,9 @@ export default {
     }
   },
   created: function() {
-    // setInterval(()=>{ this.switchSlide() }, 5000)
+    setInterval(() => {
+      this.switchSlide();
+    }, 5000);
   }
 };
 </script>
