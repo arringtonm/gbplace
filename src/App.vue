@@ -2,7 +2,7 @@
   <div id="app">
     <div class="header">
       <div class="header-interior">
-        <img src="./assets/gbplacemakinglogolofi.png">
+        <img src="images/gbplacemakinglogolofi.png">
         <!-- <div id="nav">
           <router-link to="/">Home</router-link> |
           <router-link to="/services">Services</router-link> |
