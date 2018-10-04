@@ -1,11 +1,9 @@
 <template>
   <div class="carousel-container carousel-view">
     <transition-group name="fade" mode="out-in">
-      <!-- <img :src="slides[this.selectedSlide].image" alt="" class="slide-image"> -->
       <img v-if="this.selectedSlide == 0" :src="slides[0].image" alt="" class="slide-image" key="0">
       <img v-else-if="this.selectedSlide == 1" :src="slides[1].image" alt="" class="slide-image" key="1">
       <img v-else-if="this.selectedSlide == 2" :src="slides[2].image" alt="" class="slide-image" key="2">
-
     </transition-group>
     <p>{{ slides[selectedSlide].caption }}</p>
   </div>
