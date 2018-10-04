@@ -125,10 +125,7 @@ export default {
             "What BART desires in TOD – performance targets including minimum densities & no minimum parking"
           ],
           imagepath: "images/MinnTargetLRT+Northstar296.jpg",
-          imagesextra: [
-            "images/placeholder-min.png",
-            "images/placeholder-min.png"
-          ],
+          imageextra: "images/placeholder-min.png",
           key: 3
         },
         dubai: {
@@ -136,7 +133,8 @@ export default {
           titlelong: "Dubai Metro Master Plans",
           content:
             "Dubai has set a global standard for signature development and wanted a transit system and transit oriented development to match. GB directed the preparation of master plans for 16 sites along the Dubai Metro anchoring the downtowns for new and old Dubai. Success required fundamentally re-examining Dubai planning principles and leveraging the value of the Dubai Metro. The plans coordinated and integrated TOD best practices to create detailed designs for walkable 18-hour communities. A special challenge was winning stakeholders’ understanding and acceptance of the full spectrum of TOD principles and beneﬁts. The detailed development program comprises over 160 million square feet of new construction, including over 55,000 housing units, over 43 million square feet of office space, and 14 million square feet of retail.",
-          imagepath: "images/plot_22_night_wed-Dubai-min.jpg",
+          imagepath: "images/DubaiDay-min.jpg",
+          imageextra: "images/DubaiPlot8-min.jpg",
           imagecredit: "Dubai RTA",
           key: 4
         },

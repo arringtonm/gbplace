@@ -13,6 +13,7 @@
     </div>
     <div class="right">
       <img :src="project.imagepath">
+      <img v-if="project.imageextra" :src="project.imageextra">
       <!-- v:bind for selected image -->
       <span v-if="project.imagecredit">{{ project.imagecredit }}</span>
     </div>
@@ -54,6 +55,9 @@ li {
   .right {
     display: flex;
     flex-direction: column;
+    img {
+      margin-bottom: 1em;
+    }
   }
 }
 .titlelong {
