@@ -1,21 +1,25 @@
 <template>
-  <div class="block projectblock">
-    <div class="left">
+  <div>
+    <div class="block smallerblock">
       <h3>{{ project.title }}</h3>
-      <span class="titlelong">{{ project.titlelong }}</span><br>
-      <span class="type">{{ project.type }}</span>
-      <p class="content">{{ project.content }}</p>
-      <ul>
-        <li v-for="item in project.bullets" :key="item">
-          {{ item }}
-        </li>
-      </ul>
     </div>
-    <div class="right">
-      <img :src="project.imagepath">
-      <img v-if="project.imageextra" :src="project.imageextra">
-      <!-- v:bind for selected image -->
-      <span v-if="project.imagecredit">{{ project.imagecredit }}</span>
+    <div class="block projectblock">
+      <div class="left">
+        <span class="titlelong">{{ project.titlelong }}</span><br>
+        <span class="type">{{ project.type }}</span>
+        <p class="content">{{ project.content }}</p>
+        <ul>
+          <li v-for="item in project.bullets" :key="item">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <img :src="project.imagepath">
+        <img v-if="project.imageextra" :src="project.imageextra">
+        <!-- v:bind for selected image -->
+        <span v-if="project.imagecredit">{{ project.imagecredit }}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -59,6 +63,9 @@ li {
       margin-bottom: 1em;
     }
   }
+}
+.smallerblock {
+  margin-bottom: 2em;
 }
 .titlelong {
   font-weight: bold;

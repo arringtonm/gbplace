@@ -33,7 +33,7 @@ export default {
   created: function() {
     setInterval(() => {
       this.switchSlide();
-    }, 5000);
+    }, 9500);
   }
 };
 </script>
