@@ -61,8 +61,14 @@
 
     <div id="contact">
       <div class="block upmargin">
-        <h3>Contact</h3>
-        <a href="mailto:arrington.gb@gmail.com">arrington.gb@gmail.com</a>
+        <img src="images/1GBArringtonBW-min.jpg" alt="GB Arrington" class="gbarrington">
+        <h3>Contact Us</h3>
+        <form action="https://formspree.io/arrington.gb@gmail.com"
+      method="POST">
+            <input type="text" name="name">
+            <input type="email" name="_replyto">
+            <input type="submit" value="Send">
+        </form>
       </div>
     </div>
   </div>
@@ -145,7 +151,7 @@ export default {
             "Intuitively, linking land use and transit to TOD should result in fewer car trips and a host of other benefits. In an effort to document how automobile use of residential TOD is different from conventional development, a team led by GB Arrington was hired by the Transportation Cooperative Research Board of the National Academies. The national research confirmed for the first-time what practitioners have assumed for some time-- residential TODs produce half as many daily automobile trips as conventional development. The research’s key conclusion is that Institute of Traffic Engineers’ trip generation and parking generation rates overestimate automobile trips for TOD housing by approximately 50 percent. Other key conclusions of the research include:",
           bullets: [
             "TOD households are twice as likely to not own a car and own roughly half as many cars as comparable households not living in TODs.",
-	          "Among the factors that attract households to TOD, neighborhood design, home prices and perceived value, and transit proximity consistently were placed in high value.",
+            "Among the factors that attract households to TOD, neighborhood design, home prices and perceived value, and transit proximity consistently were placed in high value.",
             "Transit ridership is positively correlated to the extensiveness of the transit system, amount of traffic congestion and higher parking costs."
           ],
           imagepath: "images/Parking-min.jpg",
@@ -278,5 +284,9 @@ img.cropped.selected {
   &:hover {
     cursor: pointer;
   }
+}
+
+.gbarrington {
+  width: 400px;
 }
 </style>
