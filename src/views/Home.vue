@@ -9,6 +9,7 @@
       <p>GB Arrington is one of the world’s most respected innovators in Transit Oriented Development (TOD). His focus is in strategically forging the link between transit and development to catalyze equitable community revitalization and place making. GB brings the insights and knowledge garnered from four decades of successfully shaping development, public policy, land use plans and transit projects at the scale of the region, the corridor and individual sites.</p>
     </div>
       <img src="images/Platform_0005Web-min.jpg" class="project">
+    <a id="projects"></a>
     <div class="block upmargin" id="services">
 
       <h3>Transit Oriented Development</h3>
@@ -222,16 +223,6 @@ export default {
           imagecredit: false,
           key: 4
         },
-        bart: {
-          title: "BART Stations",
-          titlelong: "BART 21st Century Stations",
-          content:
-            "GB has a track record of helping clients move in a new direction in response to changing needs and trends. For BART, GB developed a transformational strategy guiding how BART connects to the community and creates people places while updating and modernizing its facilities. With its roots in the 1960s BART was designed to serve the bygone needs of a different era. Meeting the contemporary needs of tomorrow’s riders and a changing region required breaking the old mold. Twenty-first century stations use TOD and place making to help drive change while accomplishing three objectives: making transit work, connecting transit to the community and creating places people want to be. GB came up with a design toolbox and evolutionary station prototypes that provide practical and aspirational examples of how BART can evolve into a 21st century system.",
-          imagepath: "images/ART.SouthBankMelbourne110-min.jpg",
-          imageextra: "images/FruitvaleWeb0086-min.jpg",
-          imagecredit: false,
-          key: 7
-        },
         target: {
           title: "Target Field",
           titlelong: "The New Target Field Station Minneapolis",
@@ -240,8 +231,18 @@ export default {
           imagepath: "images/InterchangeMay2014-min.jpg",
           imageextra: "images/MinnTargetLRT+Northstar296.jpg",
           imagecredit: false,
-          key: 9
+          key: 5
         },
+        bart: {
+          title: "BART Stations",
+          titlelong: "BART 21st Century Stations",
+          content:
+          "GB has a track record of helping clients move in a new direction in response to changing needs and trends. For BART, GB developed a transformational strategy guiding how BART connects to the community and creates people places while updating and modernizing its facilities. With its roots in the 1960s BART was designed to serve the bygone needs of a different era. Meeting the contemporary needs of tomorrow’s riders and a changing region required breaking the old mold. Twenty-first century stations use TOD and place making to help drive change while accomplishing three objectives: making transit work, connecting transit to the community and creating places people want to be. GB came up with a design toolbox and evolutionary station prototypes that provide practical and aspirational examples of how BART can evolve into a 21st century system.",
+          imagepath: "images/ART.SouthBankMelbourne110-min.jpg",
+          imageextra: "images/FruitvaleWeb0086-min.jpg",
+          imagecredit: false,
+          key: 6
+        }
       },
       slides: [
         {
