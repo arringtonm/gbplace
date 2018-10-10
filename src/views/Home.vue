@@ -63,11 +63,12 @@
       <div class="block upmargin">
         <img src="images/1GBArringtonBW-min.jpg" alt="GB Arrington" class="gbarrington">
         <h3>Contact Us</h3>
-        <form action="https://formspree.io/arrington.gb@gmail.com"
-      method="POST">
-            <input type="text" name="name">
-            <input type="email" name="_replyto">
-            <input type="submit" value="Send">
+        <!-- <form action="https://formspree.io/arrington.gb@gmail.com"
+      method="POST"> -->
+          <form action="https://formspree.io/michaelarringtoniphone@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="_replyto" placeholder="Email">
+          <input type="submit" value="Send">
         </form>
       </div>
     </div>
@@ -170,6 +171,57 @@ export default {
         }
       },
       projectsTDD: {
+        beijing: {
+          title: "Beijing New Town",
+          titlelong: "Yizhuang New Town",
+          content: "Yizhuang New Town is an outgrowth of Beijing, China’s Urban Development Plan. Yizhuang is an important economic development industrial zone in the southeastern area of Beijing and is connected to the capital by the Beijing Subway. GB Arrington served as project manager for this high-level assignment. The project provided strategic recommendations for an integrated transportation and land use plan to enable Yizhuang to grow from 100,000 people to 700,000 people in 15 years; featured a multimodal station serving high-speed rail, the now open extension of Beijing’s Metro, a bus rapid transit line and an intercity commuter rail line; and included a land use pattern of sustainable development. The plan included:",
+          bullets: [
+            "Strategic level recommendations for an integrated transportation and land use plan",
+            "Urban design plan at a sketch-level",
+            "Case studies illustrating American best practice for sustainable development",
+            "Principles for TOD and Development-Oriented Transit",
+            "Alignment of new transit lines, location of stations and roadway circulation"
+          ],
+          imagepath: "images/Yizhuang06-min.jpg",
+          imageextra: "images/VancouverNight2018-min.jpg",
+          key: 1
+        },
+        denver: {
+          title: "Denver FasTracks",
+          titlelong: "Reshaping Transit",
+          content:
+            "GB balances people moving and city shaping in transit design to optimize transit operations, community fit, urban design and economic development. Working with the Denver RTD design team, cities, developers and landowners, GB applied DOT principles to the entire 119 mile $4.7 Billion FasTracks system. Week long interactive design charrettes were held for each corridor. Station designs were modified and station locations were shifted to enable the creation of transit-oriented communities around FasTracks’ 53 stations.  GB’s work with DOT has reshaped major transit projects across the globe now in operation or with detailed designs for Portland, Los Angeles, Phoenix, Minneapolis, Honolulu, Durham, Ft Lauderdale, Denver, Australia’s Gold Coast and Auckland, New Zealand.",
+          imagepath: "images/West_0006-min.jpg",
+          imageextra: "images/DUS_StationTOD0002-min.jpg",
+          imagecredit: false,
+          key: 2
+        },
+        westside: {
+          title: "Westside Subway",
+          titlelong: "Leveraging a Subway",
+          content:
+          'Los Angeles’s top transit priority, the “subway to the sea”, has been an enduring dream for decades. GB helped to shape the project’s design and defined a path for Metro and the cities of Los Angeles and Beverly Hills to capture the land use benefits of this multi-billion dollar investment. Scenario testing helped to frame TOD planning now underway. GB prepared a station urban design report, recommendations on station locations and portal placement, assessed local plans and policies for transit-friendliness, and developed a TOD program for the corridor. GB also oversaw the preparation of land use and economic development New Starts templates that contributed to the project getting a high rating from the federal government and moving into construction.',
+          imagepath: "images/BeachSunSetdabs171a_edited-1.jpg",
+          imageextra: "images/WilshireVermont52-min.jpg",
+          imagecredit: false,
+          key: 3
+        },
+        highspeedrail: {
+          title: "High Speed Rail",
+          titlelong: "California High Speed Rail",
+          content:
+            "Capturing the value of California High-Speed Rail (CAHSR) will not happen quickly or easily. Experience from across the globe points to the importance of acting proactively to crack open the transformative power of CAHSR to reshape land use and economic development in and around its 24 stations. GB Arrington has provided on-going policy, design and strategic advice to the California High Speed Rail Authority on how to capture the land use, economic development and financial benefits derived as a result of the program. He helped the Authority think through the organizational and implementation steps necessary to align a world-class train with the market for real estate, having ready land for development, putting supportive land use plans and incentives in place, removing the barriers to development, designing and constructing stations to fit into and complement the communities they are intended to serve. GB was responsible for developing:",
+          bullets: [
+            "A joint development / value capture framework, timeline and responsibilities",
+            "HSR TOD organizational steps, barriers and capability assessment",
+            "Global best practice for stations and redevelopment",
+            "Urban Design Guidelines addressing aesthetic and functional approaches to fit CAHSR into the communities it serves"
+          ],
+          imagepath: "images/CAHSRcover-min.jpg",
+          imageextra: "images/SunnySteps-min.jpg",
+          imagecredit: false,
+          key: 4
+        },
         bart: {
           title: "BART Stations",
           titlelong: "BART 21st Century Stations",
@@ -180,33 +232,16 @@ export default {
           imagecredit: false,
           key: 7
         },
-        denver: {
-          title: "Denver FasTracks",
-          titlelong: "Denver FasTracks Development Oriented Transit",
-          content:
-            "GB balances people moving and city shaping in transit design to optimize transit operations, community fit, urban design and economic development. Working with the Denver RTD design team, cities, developers and landowners, GB applied development oriented transit (DOT) principles to the entire 119 mile $4.7 Billion FasTracks system. Week long interactive design charrettes were held for each corridor. Station designs were modified and station locations were shifted to enable the creation of transit-oriented communities around FasTracks 53 stations. GB’s work with DOT has reshaped major transit projects across the United States now in operation or with detailed designs for Portland, Los Angeles, Phoenix, Minneapolis, Baltimore, Honolulu and Ft Lauderdale.",
-          imagepath: "images/West_0006-min.jpg",
-          imagecredit: false,
-          key: 8
-        },
         target: {
           title: "Target Field",
           titlelong: "The New Target Field Station Minneapolis",
           content:
-            "Understanding the intersection of making transit work and place making can lead to critical design breakthroughs. In Minneapolis, GB led urban design workshops that resulted in changing the project design to realign the tracks to open the station up to the neighborhood, activate the public realm and to help the station spur growth in the North Loop. The $85m sweeping multi-level Target Field Station opened in 2014 and includes a park, jumbo screen, retail stores, a public plaza and a major development parcel as part of the rail hub next to Target Field.",
+            "Understanding the intersection of making transit work and place making can lead to critical design breakthroughs. In Minneapolis, GB led urban design workshops that resulted in changing the project design to realign the tracks to open the station up to the neighborhood, activate the public realm and to help spur growth in the North Loop. The $85m sweeping multi-level Target Field Station opened in 2014 and includes a park, jumbo screen, retail stores, a public plaza and a major development parcel as part of the rail hub next to Target Field.",
           imagepath: "images/InterchangeMay2014-min.jpg",
+          imageextra: "images/MinnTargetLRT+Northstar296.jpg",
           imagecredit: false,
           key: 9
         },
-        westside: {
-          title: "Westside Subway",
-          titlelong: "Westside Subway Los Angeles",
-          content:
-            'Los Angeles’s top transit priority, the "subway to the sea", has been an enduring dream for decades. GB helped to shape the project’s design and defined a multi-year path for Metro and the cities of Los Angeles and Beverly Hills to capture the land use benefits of this multi-billion dollar investment. Scenario testing helped to frame TOD planning. GB prepared a station urban design report, recommendations on station locations and portal placement, assessed local plans and policies for transit-friendliness, and developed a TOD program for the corridor. GB also oversaw the preparation of land use and economic development New Starts templates that contributed to the project getting a high rating from the federal government and receiving a Full Funding Grant Agreement in 2014.',
-          imagepath: "images/BeachSunSetdabs171a_edited-1-min.jpg",
-          imagecredit: false,
-          key: 10
-        }
       },
       slides: [
         {
