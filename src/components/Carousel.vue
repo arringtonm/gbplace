@@ -53,6 +53,7 @@ export default {
 }
 .slide-image {
   width: 100vw;
+  height: 45vw;
 }
 .fade-enter-active {
   transition: opacity 1s ease-in;
