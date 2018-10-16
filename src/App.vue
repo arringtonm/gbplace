@@ -35,6 +35,10 @@
   padding: 0px;
   margin: 0px;
 }
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .header {
   top: 0px;
   background-color: white;
