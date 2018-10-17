@@ -78,7 +78,7 @@ export default {
   },
   created: function() {
     this.selectedTODProject = this.projectsTOD.tysons;
-    this.selectedTDDProject = this.projectsTDD.bart;
+    this.selectedTDDProject = this.projectsTDD.beijing;
   },
   methods: {
     selectTODProject: function(project) {
@@ -282,6 +282,7 @@ h3 {
 img.cropped {
   border: 0px;
   width: 100%;
+  height: 100%;
   filter: brightness(80%) grayscale(70%);
   margin-top: 0px;
   padding-bottom: 0px;
@@ -295,9 +296,8 @@ img.cropped.selected {
   cursor: pointer;
 }
 .projects {
-  width: 33.333%;
+  width: 33.33%;
   display: inline-block;
-  // position: relative;
 }
 .projects-holder {
   width: 100vw;
