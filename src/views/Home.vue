@@ -59,32 +59,22 @@
     </div>
     <MyProjects :project="selectedTDDProject" id="projectsTDD"/>
 
+    <Contact/>
 
-    <div id="contact">
-      <div class="block upmargin">
-        <img src="images/1GBArringtonBW-min.jpg" alt="GB Arrington" class="gbarrington">
-        <h3>Contact Us</h3>
-        <!-- <form action="https://formspree.io/arrington.gb@gmail.com"
-      method="POST"> -->
-          <form action="https://formspree.io/michaelarringtoniphone@gmail.com" method="POST">
-          <input type="text" name="name" placeholder="Name">
-          <input type="email" name="_replyto" placeholder="Email">
-          <input type="submit" value="Send">
-        </form>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
 import Carousel from "@/components/Carousel.vue";
 import MyProjects from "@/components/MyProjects.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   name: "home",
   components: {
     Carousel,
-    MyProjects
+    MyProjects,
+    Contact
   },
   created: function() {
     this.selectedTODProject = this.projectsTOD.tysons;
