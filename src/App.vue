@@ -76,7 +76,6 @@ body {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -86,7 +85,6 @@ body {
     padding: 12px 16px;
     z-index: 1;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
