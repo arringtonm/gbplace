@@ -16,10 +16,10 @@
           <a href="#projectsTOD">Projects</a> |
           <div class="projects-content">
             <!-- <p class="nonselect">Transit Oriented Development</p> -->
-            <p v-for="project in projectsTOD" :key="project.key"><a href="#projectsTOD" :click="selectedTODProject = project"> {{ project.title }}</a></p>
+            <p v-for="project in projectsTOD" :key="project.key"><a href="#projectsTOD" @click="selectedTODProject = project"> {{ project.title }}</a></p>
             <!-- <p class="nonselect">Transit Designed for Development</p> -->
             <hr>
-            <p v-for="project in projectsTDD" :key="project.key"><a href="#projectsTDD" :click="selectedTDDProject = project"> {{ project.title }}</a></p>
+            <p v-for="project in projectsTDD" :key="project.key"><a href="#projectsTDD" @click="selectedTDDProject = project"> {{ project.title }}</a></p>
           </div>
         </span>
 
@@ -39,12 +39,6 @@ export default {
     selectedTODProject: Object,
     selectedTDDProject: Object
   }
-  // data: function() {
-  //   return {
-  //     selectedTODProject: Object,
-  //     selectedTDDProject: Object
-  //   }
-  // }
 };
 </script>
 
