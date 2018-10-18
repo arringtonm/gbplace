@@ -4,11 +4,17 @@
       <img src="images/gbplacemakinglogolofi.png">
       <div id="nav" class="dropdown">
         <a href="#">Home</a> |
-        <a href="#services" class="services-parent">Services</a> |
+        <span class="services-parent">
+          <a href="#services" class="services-parent">Services</a> |
+          <div class="services-content">
+            <p><a href="#projectsTOD">Transit Oriented Development</a></p>
+            <p><a href="#projectsTDD">Transit Designed for Development</a></p>
+          </div>
+        </span>
         <span class="projects-parent">
-          <a href="#projects">Projects</a> |
+          <a href="#projectsTOD">Projects</a> |
           <div class="projects-content">
-            <p v-for="project in projectsTOD" :key="project.key"> {{ project.title }}</p>
+            <p v-for="project in projectsTOD" :key="project.key"><a href="#projects"> {{ project.title }}</a></p>
           </div>
         </span>
 
@@ -59,21 +65,27 @@ export default {
   position: relative;
   display: inline-block;
 }
-.projects-content {
+.projects-content, .services-content {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 400px;
+  min-width: 450px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
-}
-.services-parent:hover {
-  .services-content {
-    display: block;
+  a {
+    font-weight: 400 !important;
   }
+}
+.services-parent:hover .services-content {
+  display: block;
 }
 .projects-parent:hover .projects-content {
   display: block;
+}
+.projects-content, .services-content {
+   a:hover {
+    text-decoration: underline;
+  }
 }
 </style>
