@@ -1,66 +1,69 @@
 <template>
-  <div class="home">
-    <Carousel :slides="slides"/>
+  <div>
+    <Header :projectsTOD="projectsTOD" :projectsTDD="projectsTDD"/>
+    <div class="home">
+      <Carousel :slides="slides"/>
 
-    <div class="block">
-      <h3>
-        Transformative experience you can count on.
-      </h3>
-      <p>GB Arrington is one of the world’s most respected innovators in Transit Oriented Development (TOD). His focus is in strategically forging the link between transit and development to catalyze equitable community revitalization and place making. GB brings the insights and knowledge garnered from four decades of successfully shaping development, public policy, land use plans and transit projects at the scale of the region, the corridor and individual sites.</p>
-    </div>
-      <img src="images/Platform_0005Web-min.jpg" class="project">
-    <a id="projects"></a>
-    <div class="block upmargin" id="services">
+      <div class="block">
+        <h3>
+          Transformative experience you can count on.
+        </h3>
+        <p>GB Arrington is one of the world’s most respected innovators in Transit Oriented Development (TOD). His focus is in strategically forging the link between transit and development to catalyze equitable community revitalization and place making. GB brings the insights and knowledge garnered from four decades of successfully shaping development, public policy, land use plans and transit projects at the scale of the region, the corridor and individual sites.</p>
+      </div>
+        <img src="images/Platform_0005Web-min.jpg" class="project">
+      <a id="projects"></a>
+      <div class="block upmargin" id="services">
 
-      <h3>Transit Oriented Development</h3>
-      <p>GB Place Making brings forty years of successfully forging the link between transportation and land use to catalyze equitable community revitalization, sustainable development and place making. GB has directed 125+ TOD plans and helped communities in more than 25 states and 8 countries to capitalize on their access to transit to create communities of lasting value.</p>
+        <h3>Transit Oriented Development</h3>
+        <p>GB Place Making brings forty years of successfully forging the link between transportation and land use to catalyze equitable community revitalization, sustainable development and place making. GB has directed 125+ TOD plans and helped communities in more than 25 states and 8 countries to capitalize on their access to transit to create communities of lasting value.</p>
 
-    </div>
+      </div>
 
-<!-- TOD projects  -->
+  <!-- TOD projects  -->
 
-    <div class="projects-holder">
-      <div v-for="project in projectsTOD" class="projects" :key="project.key">
-        <img :src="project.imagepath" class="cropped" v-on:click="selectTODProject(project)" v-bind:class="{ selected: project == selectedTODProject }">
+      <div class="projects-holder">
+        <div v-for="project in projectsTOD" class="projects" :key="project.key">
+          <img :src="project.imagepath" class="cropped" v-on:click="selectTODProject(project)" v-bind:class="{ selected: project == selectedTODProject }">
 
-        <p><span v-on:click="selectTODProject(project)" class="fakelink" v-bind:class="{ fakelinkselected: project == selectedTODProject }">{{ project.titlelong }}</span></p>
-        <!--  v-bind:key="project.key"
-              v-bind:class="{ selected: project == this.selectedProject }"
-       -->
-        <div class="projects-overlay">
-          <!-- <p>{{ project.title }}</p> -->
+          <p><span v-on:click="selectTODProject(project)" class="fakelink" v-bind:class="{ fakelinkselected: project == selectedTODProject }">{{ project.titlelong }}</span></p>
+          <!--  v-bind:key="project.key"
+                v-bind:class="{ selected: project == this.selectedProject }"
+         -->
+          <div class="projects-overlay">
+            <!-- <p>{{ project.title }}</p> -->
+          </div>
         </div>
       </div>
-    </div>
-    <MyProjects :project="selectedTODProject" id="projectsTOD"/>
+      <MyProjects :project="selectedTODProject" id="projectsTOD"/>
 
-    <div class="block upmargin" id="services">
+      <div class="block upmargin" id="services">
 
-      <h3>Transit Designed for Development</h3>
-      <p>GB Place Making brings a proven partner to help ensure success linking transit design and city shaping. GB’s groundbreaking experience on transit projects balances place making, great transit, TOD, seamless community integration and private development to create communities that are livable, walkable and vibrant. GB has shaped transit design in more than two dozen communities spanning every major mode – bus rapid transit, streetcar, light rail, commuter rail, heavy rail, and high speed rail.
-      </p>
-    </div>
+        <h3>Transit Designed for Development</h3>
+        <p>GB Place Making brings a proven partner to help ensure success linking transit design and city shaping. GB’s groundbreaking experience on transit projects balances place making, great transit, TOD, seamless community integration and private development to create communities that are livable, walkable and vibrant. GB has shaped transit design in more than two dozen communities spanning every major mode – bus rapid transit, streetcar, light rail, commuter rail, heavy rail, and high speed rail.
+        </p>
+      </div>
 
-<!-- TDD projects -->
+  <!-- TDD projects -->
 
-    <div class="projects-holder">
-      <div v-for="project in projectsTDD" class="projects" :key="project.key">
-        <img :src="project.imagepath" class="cropped" v-on:click="selectTDDProject(project)" v-bind:class="{ selected: project == selectedTDDProject }">
+      <div class="projects-holder">
+        <div v-for="project in projectsTDD" class="projects" :key="project.key">
+          <img :src="project.imagepath" class="cropped" v-on:click="selectTDDProject(project)" v-bind:class="{ selected: project == selectedTDDProject }">
 
-        <p><span v-on:click="selectTDDProject(project)" class="fakelink" v-bind:class="{ fakelinkselected: project == selectedTDDProject }">{{ project.titlelong }}</span></p>
+          <p><span v-on:click="selectTDDProject(project)" class="fakelink" v-bind:class="{ fakelinkselected: project == selectedTDDProject }">{{ project.titlelong }}</span></p>
 
-        <!--  v-bind:key="project.key"
-              v-bind:class="{ selected: project == this.selectedProject }"
-       -->
-        <div class="projects-overlay">
-          <!-- <p>{{ project.title }}</p> -->
+          <!--  v-bind:key="project.key"
+                v-bind:class="{ selected: project == this.selectedProject }"
+         -->
+          <div class="projects-overlay">
+            <!-- <p>{{ project.title }}</p> -->
+          </div>
         </div>
       </div>
+      <MyProjects :project="selectedTDDProject" id="projectsTDD"/>
+
+      <Contact/>
+
     </div>
-    <MyProjects :project="selectedTDDProject" id="projectsTDD"/>
-
-    <Contact/>
-
   </div>
 </template>
 
@@ -68,13 +71,15 @@
 import Carousel from "@/components/Carousel.vue";
 import MyProjects from "@/components/MyProjects.vue";
 import Contact from "@/components/Contact.vue";
+import Header from "@/components/Header.vue";
 
 export default {
   name: "home",
   components: {
     Carousel,
     MyProjects,
-    Contact
+    Contact,
+    Header
   },
   created: function() {
     this.selectedTODProject = this.projectsTOD.tysons;

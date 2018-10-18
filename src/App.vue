@@ -1,20 +1,11 @@
 <template>
   <div id="app">
-    <div class="header">
+    <!-- <div class="header">
       <div class="header-interior">
         <img src="images/gbplacemakinglogolofi.png">
-        <!-- <div id="nav">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/services">Services</router-link> |
-          <router-link to="/projects">Projects</router-link> |
-          <router-link to="/team">Team</router-link> |
-          <router-link to="/contact">Contact</router-link>
-        </div> -->
-        <div id="nav">
-        <!-- <div id="nav" class="dropdown"> -->
-
+        <div id="nav" class="dropdown">
           <a href="#">Home</a> |
-          <!-- <a href="#services">Services</a> | -->
+          <a href="#services">Services</a> |
           <a href="#projects">Projects</a> |
           <a href="#contact">Contact</a>
           <div class="dropdown-content">
@@ -22,11 +13,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <router-view/>
   </div>
 </template>
 
+
+<script>
+// import Home from "@/views/Home.vue";
+</script>
 
 
 <style lang="scss">
