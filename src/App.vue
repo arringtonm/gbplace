@@ -1,26 +1,20 @@
 <template>
   <div id="app">
-    <!-- <div class="header">
-      <div class="header-interior">
-        <img src="images/gbplacemakinglogolofi.png">
-        <div id="nav" class="dropdown">
-          <a href="#">Home</a> |
-          <a href="#services">Services</a> |
-          <a href="#projects">Projects</a> |
-          <a href="#contact">Contact</a>
-          <div class="dropdown-content">
-            <span>Item 1</span>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <router-view/>
+    <!-- <router-view/> -->
+    <Home/>
   </div>
 </template>
 
 
 <script>
-// import Home from "@/views/Home.vue";
+import Home from "./views/Home.vue";
+// import Header from "@/components/Header.vue";
+export default {
+  name: "app",
+  components: {
+    Home
+  }
+};
 </script>
 
 
@@ -31,8 +25,6 @@
   margin: 0px;
 }
 body {
-  // max-width: 90%;
-  // align-items: center;
   overflow-x: hidden;
 }
 .header {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :projectsTOD="projectsTOD" :projectsTDD="projectsTDD"/>
+    <Header :projectsTOD="projectsTOD" :projectsTDD="projectsTDD" :selectedTODProject="selectedTODProject" :selectedTDDProject="selectedTDDProject" />
     <div class="home">
       <Carousel :slides="slides"/>
 
@@ -74,7 +74,7 @@ import Contact from "@/components/Contact.vue";
 import Header from "@/components/Header.vue";
 
 export default {
-  name: "home",
+  name: "Home",
   components: {
     Carousel,
     MyProjects,
