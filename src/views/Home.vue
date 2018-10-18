@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <!-- <Carousel image="carousel-dosha-min.jpg"/> -->
     <Carousel :slides="slides"/>
+
     <div class="block">
       <h3>
         Transformative experience you can count on.
@@ -165,7 +165,8 @@ export default {
         beijing: {
           title: "Beijing New Town",
           titlelong: "Yizhuang New Town",
-          content: "Yizhuang New Town is an outgrowth of Beijing, China’s Urban Development Plan. Yizhuang is an important economic development industrial zone in the southeastern area of Beijing and is connected to the capital by the Beijing Subway. GB Arrington served as project manager for this high-level assignment. The project provided strategic recommendations for an integrated transportation and land use plan to enable Yizhuang to grow from 100,000 people to 700,000 people in 15 years; featured a multimodal station serving high-speed rail, the now open extension of Beijing’s Metro, a bus rapid transit line and an intercity commuter rail line; and included a land use pattern of sustainable development. The plan included:",
+          content:
+            "Yizhuang New Town is an outgrowth of Beijing, China’s Urban Development Plan. Yizhuang is an important economic development industrial zone in the southeastern area of Beijing and is connected to the capital by the Beijing Subway. GB Arrington served as project manager for this high-level assignment. The project provided strategic recommendations for an integrated transportation and land use plan to enable Yizhuang to grow from 100,000 people to 700,000 people in 15 years; featured a multimodal station serving high-speed rail, the now open extension of Beijing’s Metro, a bus rapid transit line and an intercity commuter rail line; and included a land use pattern of sustainable development. The plan included:",
           bullets: [
             "Strategic level recommendations for an integrated transportation and land use plan",
             "Urban design plan at a sketch-level",
@@ -191,7 +192,7 @@ export default {
           title: "Westside Subway",
           titlelong: "Leveraging a Subway",
           content:
-          'Los Angeles’s top transit priority, the “subway to the sea”, has been an enduring dream for decades. GB helped to shape the project’s design and defined a path for Metro and the cities of Los Angeles and Beverly Hills to capture the land use benefits of this multi-billion dollar investment. Scenario testing helped to frame TOD planning now underway. GB prepared a station urban design report, recommendations on station locations and portal placement, assessed local plans and policies for transit-friendliness, and developed a TOD program for the corridor. GB also oversaw the preparation of land use and economic development New Starts templates that contributed to the project getting a high rating from the federal government and moving into construction.',
+            "Los Angeles’s top transit priority, the “subway to the sea”, has been an enduring dream for decades. GB helped to shape the project’s design and defined a path for Metro and the cities of Los Angeles and Beverly Hills to capture the land use benefits of this multi-billion dollar investment. Scenario testing helped to frame TOD planning now underway. GB prepared a station urban design report, recommendations on station locations and portal placement, assessed local plans and policies for transit-friendliness, and developed a TOD program for the corridor. GB also oversaw the preparation of land use and economic development New Starts templates that contributed to the project getting a high rating from the federal government and moving into construction.",
           imagepath: "images/BeachSunSetdabs171a_edited-1.jpg",
           imageextra: "images/WilshireVermont52-min.jpg",
           imagecredit: false,
@@ -227,7 +228,7 @@ export default {
           title: "BART Stations",
           titlelong: "BART 21st Century Stations",
           content:
-          "GB has a track record of helping clients move in a new direction in response to changing needs and trends. For BART, GB developed a transformational strategy guiding how BART connects to the community and creates people places while updating and modernizing its facilities. With its roots in the 1960s BART was designed to serve the bygone needs of a different era. Meeting the contemporary needs of tomorrow’s riders and a changing region required breaking the old mold. Twenty-first century stations use TOD and place making to help drive change while accomplishing three objectives: making transit work, connecting transit to the community and creating places people want to be. GB came up with a design toolbox and evolutionary station prototypes that provide practical and aspirational examples of how BART can evolve into a 21st century system.",
+            "GB has a track record of helping clients move in a new direction in response to changing needs and trends. For BART, GB developed a transformational strategy guiding how BART connects to the community and creates people places while updating and modernizing its facilities. With its roots in the 1960s BART was designed to serve the bygone needs of a different era. Meeting the contemporary needs of tomorrow’s riders and a changing region required breaking the old mold. Twenty-first century stations use TOD and place making to help drive change while accomplishing three objectives: making transit work, connecting transit to the community and creating places people want to be. GB came up with a design toolbox and evolutionary station prototypes that provide practical and aspirational examples of how BART can evolve into a 21st century system.",
           imagepath: "images/ART.SouthBankMelbourne110-min.jpg",
           imageextra: "images/FruitvaleWeb0086-min.jpg",
           imagecredit: false,
@@ -238,14 +239,14 @@ export default {
         {
           image: "images/NewLynnNewZealandweb-min.jpg",
           caption:
-            '"the world’s foremost authority on TOD policy, design and implementation."',
+            '"[T]he world’s foremost authority on TOD policy, design and implementation."',
           captionsayer: "Urban Development Institute of Australia",
           id: 1
         },
         {
           image: "images/tysonWest_v1-min.jpg",
           caption:
-            "GB’s plan is transforming Tysons Corner into America’s largest TOD",
+            '"GB’s plan is transforming Tysons Corner into America’s largest TOD"',
           captionsayer:
             '"10 Ideas for Changing the World Right Now."  Time Magazine',
           imagecredit: "Fairfax County",
@@ -255,7 +256,7 @@ export default {
           image: "images/carousel-dosha.jpg",
           // image: "images/1510Web-min.jpg",
           caption:
-            "GB’s work changed the face of transit and land use in Portland",
+            '"GB’s work changed the face of transit and land use in Portland"',
           captionsayer:
             "Presidential Design Award, The White House, Westside Light Rail",
           id: 3

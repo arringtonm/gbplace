@@ -5,7 +5,8 @@
       <img v-else-if="this.selectedSlide == 1" :src="slides[1].image" alt="" class="slide-image" key="1">
       <img v-else-if="this.selectedSlide == 2" :src="slides[2].image" alt="" class="slide-image" key="2">
     </transition-group>
-    <p>{{ slides[selectedSlide].caption }}</p>
+    <p class="caption">{{ slides[selectedSlide].caption }}</p>
+    <p>{{ slides[selectedSlide].captionsayer }}</p>
   </div>
 </template>
 
@@ -63,5 +64,10 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+.caption {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 </style>
