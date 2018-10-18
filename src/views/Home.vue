@@ -15,25 +15,18 @@
               <p><a href="#projectsTDD">Transit Designed for Development</a></p>
             </div>
           </span>
-          <!-- TOD projects menu items -->
           <span class="projects-parent">
             <a href="#projectsTOD">Projects</a> |
             <div class="projects-content">
-              <!-- <p class="nonselect">Transit Oriented Development</p> -->
               <p v-for="project in projectsTOD" :key="project.key"><a href="#projectsTOD" @click="selectTODProject(project)"> {{ project.title }}</a></p>
-              <!-- <p class="nonselect">Transit Designed for Development</p> -->
               <hr>
               <p v-for="project in projectsTDD" :key="project.key"><a href="#projectsTDD" @click="selectTDDProject(project)"> {{ project.title }}</a></p>
             </div>
           </span>
-
           <a href="#contact">Contact</a>
-
         </div>
       </div>
     </div>
-
-
 
     <div class="home">
       <Carousel :slides="slides"/>
@@ -319,6 +312,10 @@ export default {
 h3 {
   margin-bottom: 20px;
 }
+img.project {
+  width: 100vw;
+}
+
 img.cropped {
   border: 0px;
   width: 100%;
