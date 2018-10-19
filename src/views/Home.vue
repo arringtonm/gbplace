@@ -51,16 +51,11 @@
       <div class="projects-holder">
         <div v-for="project in projectsTOD" class="projects" :key="project.key">
           <img :src="project.imagepath" class="cropped" v-on:click="selectTODProject(project)" v-bind:class="{ selected: project == selectedTODProject }">
-
-          <p><span v-on:click="selectTODProject(project)" class="fakelink" v-bind:class="{ fakelinkselected: project == selectedTODProject }">{{ project.titlelong }}</span></p>
-          <!--  v-bind:key="project.key"
-                v-bind:class="{ selected: project == this.selectedProject }"
-         -->
           <div class="projects-overlay">
-            <!-- <p>{{ project.title }}</p> -->
+            <p>{{ project.title }}</p>
           </div>
-        </div>
-      </div>
+        </div><!-- v-for projects -->
+      </div><!-- projets-holder -->
       <MyProjects :project="selectedTODProject" id="projectsTOD"/>
 
       <div class="block upmargin" id="services">
@@ -278,7 +273,7 @@ export default {
         {
           image: "images/tysonWest_v1-min.jpg",
           caption:
-            '"GB’s plan is transforming Tysons Corner into America’s largest TOD"',
+            "GB’s plan is transforming Tysons Corner into America’s largest TOD",
           captionsayer:
             '"10 Ideas for Changing the World Right Now."  Time Magazine',
           imagecredit: "Fairfax County",
@@ -288,7 +283,7 @@ export default {
           image: "images/carousel-dosha.jpg",
           // image: "images/1510Web-min.jpg",
           caption:
-            '"GB’s work changed the face of transit and land use in Portland"',
+            "GB’s work changed the face of transit and land use in Portland",
           captionsayer:
             "Presidential Design Award, The White House, Westside Light Rail",
           id: 3
@@ -315,8 +310,8 @@ h3 {
 img.project {
   width: 100vw;
 }
-
 img.cropped {
+  // position: absolute;
   border: 0px;
   width: 100%;
   height: 100%;
@@ -335,10 +330,22 @@ img.cropped.selected {
 .projects {
   width: 33.33%;
   display: inline-block;
+  // position: absolute;
 }
 .projects-holder {
   width: 100vw;
   margin-bottom: 100px;
+  display: flex;
+  flex-flow: wrap;
+  position: relative;
+}
+.projects-overlay {
+  position: absolute;
+  // top: -10px;
+  // margin-top: auto;
+  z-index: 5;
+  color: white;
+  background-color: red;
 }
 .fakelink {
   font-weight: bold;

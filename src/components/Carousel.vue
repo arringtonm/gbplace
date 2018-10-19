@@ -4,11 +4,12 @@
       <img :src="slides[0].image" class="slide-image" :class="{ slide_visible : this.selectedSlide == 0}">
       <img :src="slides[1].image" class="slide-image" :class="{ slide_visible : this.selectedSlide == 1}">
       <img :src="slides[2].image" class="slide-image" :class="{ slide_visible : this.selectedSlide == 2}">
-    </div>
-    <div class="quotes-holder">
-      <p class="caption">{{ slides[selectedSlide].caption }}</p>
-      <p>{{ slides[selectedSlide].captionsayer }}</p>
-    </div>
+      <div class="quotes-holder">
+        <p class="caption">{{ slides[selectedSlide].caption }}</p>
+        <p>{{ slides[selectedSlide].captionsayer }}</p>
+      </div> <!-- quotes-holder -->
+    </div> <!-- carousel-container and carousel-view -->
+
   </div>
 </template>
 
@@ -43,7 +44,7 @@ export default {
 
 <style scoped lang="scss">
 .carousel-container {
-  margin-bottom: 1em;
+  margin-bottom: 100px;
 }
 .carousel-view {
   display: flex;
@@ -59,6 +60,13 @@ export default {
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+  z-index: 2;
+  margin-top: auto;
+  // margin-bottom: auto;
+  color: white;
+  background-color: rgba(00,00,00,0.5);
+  // box-shadow: 0px 0px 20px 10px rgba(00,00,00,0.5);
+  padding: 1em;
 }
 .slide-image {
   position: absolute;
@@ -78,10 +86,15 @@ export default {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-.caption {
-  margin-top: 1em;
-  font-size: 1.5em;
+.caption, .captionsayer {
+  // margin-top: 1em;
+  font-size: 2em;
   font-weight: 400;
+  // background-color: rgba(00,00,00,0.5);
+  // box-shadow: 0px 0px 20px 10px rgba(00,00,00,0.5);
+}
+.captionsayer {
+  font-size: 1em;
 }
 .slide_visible {
   opacity: 1;
