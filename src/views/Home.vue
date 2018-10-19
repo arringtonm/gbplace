@@ -423,11 +423,12 @@ img.project {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 450px;
+  min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
   a {
+    // width: 100%;
     font-weight: 400 !important;
   }
 }
@@ -442,12 +443,16 @@ img.project {
   a {
     text-decoration: none;
     line-height: 2em;
+    // width: 100%;
+    padding: 0.25em;
   }
 }
 .projects-content,
 .services-content {
   a:hover {
-    text-decoration: underline;
+    // text-decoration: underline;
+    color: white !important;
+    background-color: rgba(0,0,0,0.7);
   }
 }
 p.nonselect {
