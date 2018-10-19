@@ -76,7 +76,7 @@
       <div class="projects-holder">
         <div v-for="project in projectsTDD" class="projects" :key="project.key" v-bind:style="{ backgroundImage : 'url(' + project.imagepath + ')' }" v-on:click="selectTDDProject(project)" :class="{ selected: project == selectedTDDProject }">
           <div class="projects-cover">
-            <span class="projects-overlay2">{{ project.title }}</span>
+            <span class="projects-overlay">{{ project.title }}</span>
           </div>
         </div><!-- v-for projects -->
       </div><!-- projets-holder -->
@@ -346,7 +346,7 @@ img.project {
   &:hover {
     cursor: pointer;
     background-color: rgba(0,0,0,0);
-    .projects-overlay, .projects-overlay2 {
+    .projects-overlay {
       // color: black;
       background-color: rgba(0,0,0,0.5);
     }
@@ -366,14 +366,6 @@ img.project {
   text-align: center;
   padding: 0.25em;
   width: 100%;
-}
-.projects-overlay2 {
-  z-index: 3;
-  color: white;
-  font-size: 1.25em;
-  text-align: center;
-  padding: 0.25em;
-  // width: 100%;
 }
 .selected {
   z-index: 2;

@@ -65,7 +65,7 @@ export default {
   margin-top: auto;
   // margin-bottom: auto;
   color: white;
-  background-color: rgba(00,00,00,0.5);
+  background-color: rgba(0,0,0,0.5);
   // box-shadow: 0px 0px 20px 10px rgba(00,00,00,0.5);
   padding: 1em;
 }
