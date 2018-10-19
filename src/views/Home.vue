@@ -48,14 +48,20 @@
 
   <!-- TOD projects  -->
 
+
+
+<br><br>
+
       <div class="projects-holder">
-        <div v-for="project in projectsTOD" class="projects" :key="project.key">
-          <img :src="project.imagepath" class="cropped" v-on:click="selectTODProject(project)" v-bind:class="{ selected: project == selectedTODProject }">
-          <div class="projects-overlay">
-            <p>{{ project.title }}</p>
+        <div v-for="project in projectsTOD" class="projects" :key="project.key" v-bind:style="{ backgroundImage : 'url(' + project.imagepath + ')' }" v-on:click="selectTODProject(project)" :class="{ selected: project == selectedTODProject }">
+          <div class="projects-cover">
+            <span class="projects-overlay">{{ project.title }}</span>
           </div>
         </div><!-- v-for projects -->
       </div><!-- projets-holder -->
+
+
+
       <MyProjects :project="selectedTODProject" id="projectsTOD"/>
 
       <div class="block upmargin" id="services">
@@ -68,19 +74,15 @@
   <!-- TDD projects -->
 
       <div class="projects-holder">
-        <div v-for="project in projectsTDD" class="projects" :key="project.key">
-          <img :src="project.imagepath" class="cropped" v-on:click="selectTDDProject(project)" v-bind:class="{ selected: project == selectedTDDProject }">
-
-          <p><span v-on:click="selectTDDProject(project)" class="fakelink" v-bind:class="{ fakelinkselected: project == selectedTDDProject }">{{ project.titlelong }}</span></p>
-
-          <!--  v-bind:key="project.key"
-                v-bind:class="{ selected: project == this.selectedProject }"
-         -->
-          <div class="projects-overlay">
-            <!-- <p>{{ project.title }}</p> -->
+        <div v-for="project in projectsTDD" class="projects" :key="project.key" v-bind:style="{ backgroundImage : 'url(' + project.imagepath + ')' }" v-on:click="selectTDDProject(project)" :class="{ selected: project == selectedTDDProject }">
+          <div class="projects-cover">
+            <span class="projects-overlay2">{{ project.title }}</span>
           </div>
-        </div>
-      </div>
+        </div><!-- v-for projects -->
+      </div><!-- projets-holder -->
+
+
+
       <MyProjects :project="selectedTDDProject" id="projectsTDD"/>
 
       <Contact/>
@@ -310,27 +312,45 @@ h3 {
 img.project {
   width: 100vw;
 }
-img.cropped {
-  // position: absolute;
-  border: 0px;
-  width: 100%;
-  height: 100%;
-  filter: brightness(80%) grayscale(70%);
-  margin-top: 0px;
-  padding-bottom: 0px;
-  &:hover {
-    filter: grayscale(0%) brightness(100%);
-    cursor: pointer;
-  }
-}
-img.cropped.selected {
-  filter: grayscale(0%) brightness(100%);
-  cursor: pointer;
-}
+// img.cropped {
+//   position: relative;
+//   border: 0px;
+//   width: 100%;
+//   height: 100%;
+//   filter: brightness(80%) grayscale(70%);
+//   margin-top: 0px;
+//   padding-bottom: 0px;
+//   &:hover {
+//     filter: grayscale(0%) brightness(100%);
+//     cursor: pointer;
+//   }
+// }
+// img.cropped.selected {
+//   filter: grayscale(0%) brightness(100%);
+//   cursor: pointer;
+// }
 .projects {
   width: 33.33%;
+  height: 10vw;
   display: inline-block;
-  // position: absolute;
+  background-size: cover;
+}
+.projects-cover {
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    .projects-overlay, .projects-overlay2 {
+      // color: black;
+      background-color: rgba(0,0,0,0.5);
+    }
+  }
 }
 .projects-holder {
   width: 100vw;
@@ -340,12 +360,27 @@ img.cropped.selected {
   position: relative;
 }
 .projects-overlay {
-  position: absolute;
-  // top: -10px;
-  // margin-top: auto;
-  z-index: 5;
+  z-index: 3;
   color: white;
-  background-color: red;
+  font-size: 1.25em;
+  text-align: center;
+  padding: 0.25em;
+  width: 100%;
+}
+.projects-overlay2 {
+  z-index: 3;
+  color: white;
+  font-size: 1.25em;
+  text-align: center;
+  padding: 0.25em;
+  // width: 100%;
+}
+.selected {
+  z-index: 2;
+  background-color: rgba(255,255,255,1);
+  .projects-overlay {
+    background-color: rgba(0,0,0,0.5);
+  }
 }
 .fakelink {
   font-weight: bold;
