@@ -11,16 +11,16 @@
           <span class="services-parent">
             <a href="#services" class="services-parent">Services</a> |
             <div class="services-content">
-              <p><a href="#projectsTOD">Transit Oriented Development</a></p>
-              <p><a href="#projectsTDD">Transit Designed for Development</a></p>
+              <p class="services"><a href="#projectsTOD">Transit Oriented Development</a></p>
+              <p class="services"><a href="#projectsTDD">Transit Designed for Development</a></p>
             </div>
           </span>
           <span class="projects-parent">
             <a href="#projectsTOD">Projects</a> |
             <div class="projects-content">
-              <p v-for="project in projectsTOD" :key="project.key"><a href="#projectsTOD" @click="selectTODProject(project)"> {{ project.title }}</a></p>
+              <p v-for="project in projectsTOD" :key="project.key" class="services"><a href="#projectsTOD" @click="selectTODProject(project)"> {{ project.title }}</a></p>
               <hr>
-              <p v-for="project in projectsTDD" :key="project.key"><a href="#projectsTDD" @click="selectTDDProject(project)"> {{ project.title }}</a></p>
+              <p v-for="project in projectsTDD" :key="project.key" class="services"><a href="#projectsTDD" @click="selectTDDProject(project)"> {{ project.title }}</a></p>
             </div>
           </span>
           <a href="#contact">Contact</a>
@@ -418,6 +418,16 @@ img.project {
   position: relative;
   display: inline-block;
 }
+p.services {
+  width: 100%;
+  padding: .25em 0em .25em 1em;
+  &:hover {
+    background-color: rgba(0,0,0,0.7);
+    a {
+      color: white !important;
+    }
+  }
+}
 .projects-content,
 .services-content {
   display: none;
@@ -425,8 +435,8 @@ img.project {
   background-color: white;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 1;
+  // padding: 12px 16px;
+  z-index: 5;
   a {
     // width: 100%;
     font-weight: 400 !important;
@@ -452,7 +462,7 @@ img.project {
   a:hover {
     // text-decoration: underline;
     color: white !important;
-    background-color: rgba(0,0,0,0.7);
+    // background-color: rgba(0,0,0,0.7);
   }
 }
 p.nonselect {
