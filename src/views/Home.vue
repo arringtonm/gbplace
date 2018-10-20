@@ -53,7 +53,7 @@
 <br><br>
 
       <div class="projects-holder">
-        <div v-for="project in projectsTOD" class="projects" :key="project.key" v-bind:style="{ backgroundImage : 'url(' + project.imagepath + ')' }" v-on:click="selectTODProject(project)" :class="{ selected: project == selectedTODProject }">
+        <div v-for="project in projectsTOD" class="projects" :key="project.key" v-bind:style="{ backgroundImage : 'url(' + project.imagepath + ')' }" v-on:click="selectTODProject(project)" :class="{ selected : project == selectedTODProject }">
           <div class="projects-cover">
             <span class="projects-overlay">{{ project.title }}</span>
           </div>
@@ -124,7 +124,7 @@ export default {
       selectedTDDProject: Object,
       projectsTOD: {
         tysons: {
-          title: "Tysons Corner",
+          title: "Suburban Reinvention",
           titlelong: "Transforming Tysons Corner",
           content:
             "Reinventing the suburbs to become walkable urban places is a special challenge in creating vibrant communities. GB directed development of the plan now guiding the transformation of Tysons Corner, Virginia into America’s largest TOD. The plan, which incorporates 95% of all growth within a 3-minute walk of four Metrorail stops and three planned circulator routes, envisions 200,000 new jobs, 100,000 new residents, affordable housing, a dense street grid, and a network of parks. Since the plan’s completion, a $2.6 billion Metrorail extension has opened, developers have contributed $400 million and three new Fortune 500 companies have joined others in the area. The innovative plan has been widely heralded in the national media for creating a new model for suburban transformation. In 2011, the comprehensive plan received the Daniel Burnham Award, https://www.planning.org/awards/2011/ the American Planning Association’s (APA) most prestigious prize.",
@@ -133,7 +133,7 @@ export default {
           key: 1
         },
         portland: {
-          title: "Portland TOD",
+          title: "Groundbreaking TOD",
           titlelong: "Created a model for TOD in Portland",
           content:
             "GB’s innovative work on TOD has served as a national model for how to link transit and land use to create livable communities. GB created and led the multi-jurisdictional TOD planning for Portland’s first two Light Rail Transit (LRT) lines – the east side and west side lines. Those station area plans have guided billions of dollars in TOD development around the stations. GB also created the TOD implementation programs for Portland’s transit agency, TriMet and Portland Metro, the regional government. TriMet estimates that $13.6 billion worth of development has occurred around its light rail stations.",
@@ -142,8 +142,8 @@ export default {
           key: 2
         },
         bartTOD: {
-          title: "BART TOD Guidelines",
-          titlelong: "Tomorrow's Best Practices",
+          title: "Tomorrow's Best Practices",
+          titlelong: "BART TOD Guidelines",
           content:
             "Over the past three decades BART has evolved to become one of America’s most innovative transit agency TOD programs.  Not content to rest on its laurels, BART has pushed the envelope further by retooling what it expects from and how it undertakes TOD. Guided by a new TOD Policy and TOD Guidelines BART has raised the bar on its expectations for success, stepped up to help address the Bay Area’s affordable housing crisis, and is weaning its long addiction to commuter parking when TOD can deliver better outcomes. As project manager, GB Arrington played a key role in helping BART retool its TOD program, develop a new TOD policy and take the strategic steps necessary to proactively move TOD implementation to the next level of performance:",
           bullets: [
@@ -156,7 +156,7 @@ export default {
           key: 3
         },
         dubai: {
-          title: "Dubai Metro",
+          title: "Audacious TOD",
           titlelong: "Dubai Metro Master Plans",
           content:
             "Dubai has set a global standard for signature development and wanted a transit system and transit oriented development to match. GB directed the preparation of master plans for 16 sites along the Dubai Metro anchoring the downtowns for new and old Dubai. Success required fundamentally re-examining Dubai planning principles and leveraging the value of the Dubai Metro. The plans coordinated and integrated TOD best practices to create detailed designs for walkable 18-hour communities. A special challenge was winning stakeholders’ understanding and acceptance of the full spectrum of TOD principles and beneﬁts. The detailed development program comprises over 160 million square feet of new construction, including over 55,000 housing units, over 43 million square feet of office space, and 14 million square feet of retail.",
@@ -166,8 +166,8 @@ export default {
           key: 4
         },
         effectsTOD: {
-          title: "Effects of TOD on Housing, Parking & Travel",
-          titlelong: "Cutting Edge Research",
+          title: "Cutting Edge Research",
+          titlelong: "Effects of TOD on Housing, Parking & Travel",
           content:
             "Intuitively, linking land use and transit to TOD should result in fewer car trips and a host of other benefits. In an effort to document how automobile use of residential TOD is different from conventional development, a team led by GB Arrington was hired by the Transportation Cooperative Research Board of the National Academies. The national research confirmed for the first-time what practitioners have assumed for some time-- residential TODs produce half as many daily automobile trips as conventional development. The research’s key conclusion is that Institute of Traffic Engineers’ trip generation and parking generation rates overestimate automobile trips for TOD housing by approximately 50 percent. Other key conclusions of the research include:",
           bullets: [
@@ -181,8 +181,8 @@ export default {
           key: 5
         },
         todstrategies: {
-          title: "TOD Strategies",
-          titlelong: "Impactful Agency TOD Strategies",
+          title: "TOD implementation",
+          titlelong: "Impactful TOD Strategies",
           content:
             "As TOD moves increasingly from planning theory to practice, agencies are increasingly seeking the insights to enhance their effectiveness in enabling TOD. GB’s experience is unparalleled in helping craft and deliver the right strategy for realizing TOD. He brings the critical knowledge gained from creating and managing the influential TOD programs at both Portland’s TriMet and Metro, and as the project manager of Maryland’s Governors Task Force on TOD, the District of Columbia’s Mayors TOD Task Force, Denver RTD’s TOD Strategic Plan, the Met Council TOD Strategic Plan, the Prince Georges County TOD Strategy and California’s Statewide TOD Study. This experience has taught him no two places are the same and what works in one community won’t necessarily work in another.",
           imagepath: "images/Denver_0028_-min.jpg",
@@ -208,8 +208,8 @@ export default {
           key: 1
         },
         denver: {
-          title: "Denver FasTracks",
-          titlelong: "Reshaping Transit",
+          title: "Reshaping Transit",
+          titlelong: "Denver FasTracks",
           content:
             "GB balances people moving and city shaping in transit design to optimize transit operations, community fit, urban design and economic development. Working with the Denver RTD design team, cities, developers and landowners, GB applied DOT principles to the entire 119 mile $4.7 Billion FasTracks system. Week long interactive design charrettes were held for each corridor. Station designs were modified and station locations were shifted to enable the creation of transit-oriented communities around FasTracks’ 53 stations.  GB’s work with DOT has reshaped major transit projects across the globe now in operation or with detailed designs for Portland, Los Angeles, Phoenix, Minneapolis, Honolulu, Durham, Ft Lauderdale, Denver, Australia’s Gold Coast and Auckland, New Zealand.",
           imagepath: "images/West_0006-min.jpg",
@@ -218,8 +218,8 @@ export default {
           key: 2
         },
         westside: {
-          title: "Westside Subway",
-          titlelong: "Leveraging a Subway",
+          title: "Leveraging a Subway",
+          titlelong: "Westside  Subway Los Angeles",
           content:
             "Los Angeles’s top transit priority, the “subway to the sea”, has been an enduring dream for decades. GB helped to shape the project’s design and defined a path for Metro and the cities of Los Angeles and Beverly Hills to capture the land use benefits of this multi-billion dollar investment. Scenario testing helped to frame TOD planning now underway. GB prepared a station urban design report, recommendations on station locations and portal placement, assessed local plans and policies for transit-friendliness, and developed a TOD program for the corridor. GB also oversaw the preparation of land use and economic development New Starts templates that contributed to the project getting a high rating from the federal government and moving into construction.",
           imagepath: "images/BeachSunSetdabs171a_edited-1.jpg",
@@ -244,8 +244,8 @@ export default {
           key: 4
         },
         target: {
-          title: "Target Field",
-          titlelong: "The New Target Field Station Minneapolis",
+          title: "Station + TOD",
+          titlelong: "Target Field Station Minneapolis",
           content:
             "Understanding the intersection of making transit work and place making can lead to critical design breakthroughs. In Minneapolis, GB led urban design workshops that resulted in changing the project design to realign the tracks to open the station up to the neighborhood, activate the public realm and to help spur growth in the North Loop. The $85m sweeping multi-level Target Field Station opened in 2014 and includes a park, jumbo screen, retail stores, a public plaza and a major development parcel as part of the rail hub next to Target Field.",
           imagepath: "images/InterchangeMay2014-min.jpg",
@@ -254,7 +254,7 @@ export default {
           key: 5
         },
         bart: {
-          title: "BART Stations",
+          title: "Transforming Stations",
           titlelong: "BART 21st Century Stations",
           content:
             "GB has a track record of helping clients move in a new direction in response to changing needs and trends. For BART, GB developed a transformational strategy guiding how BART connects to the community and creates people places while updating and modernizing its facilities. With its roots in the 1960s BART was designed to serve the bygone needs of a different era. Meeting the contemporary needs of tomorrow’s riders and a changing region required breaking the old mold. Twenty-first century stations use TOD and place making to help drive change while accomplishing three objectives: making transit work, connecting transit to the community and creating places people want to be. GB came up with a design toolbox and evolutionary station prototypes that provide practical and aspirational examples of how BART can evolve into a 21st century system.",
@@ -369,7 +369,9 @@ img.project {
 }
 .selected {
   z-index: 2;
-  background-color: rgba(255, 255, 255, 1);
+  // background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(0,0,0,0);
+  // background-color:
   .projects-overlay {
     background-color: rgba(0, 0, 0, 0.5);
   }
