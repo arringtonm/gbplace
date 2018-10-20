@@ -336,7 +336,7 @@ img.project {
   background-size: cover;
 }
 .projects-cover {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
   height: 100%;
   width: 100%;
@@ -345,10 +345,10 @@ img.project {
   align-items: center;
   &:hover {
     cursor: pointer;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     .projects-overlay {
       // color: black;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0, 0, 0, 0.5);
     }
   }
 }
@@ -369,9 +369,9 @@ img.project {
 }
 .selected {
   z-index: 2;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   .projects-overlay {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 .fakelink {
@@ -384,7 +384,6 @@ img.project {
 .gbarrington {
   width: 400px;
 }
-
 
 // ####################################################################
 // header
@@ -420,19 +419,22 @@ img.project {
 }
 p.services {
   width: 100%;
-  padding: .25em 0em .25em 1em;
+  padding: 0.25em 0em 0.25em 1em;
   &:hover {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     a {
       color: white !important;
     }
   }
 }
+// p.services:first {
+//   text-decoration: underline;
+// }
 .projects-content,
 .services-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.97);
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   // padding: 12px 16px;
@@ -472,5 +474,4 @@ hr {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-
 </style>

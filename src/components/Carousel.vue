@@ -65,7 +65,7 @@ export default {
   margin-top: auto;
   // margin-bottom: auto;
   color: white;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   // box-shadow: 0px 0px 20px 10px rgba(00,00,00,0.5);
   padding: 1em;
 }
@@ -87,7 +87,8 @@ export default {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-.caption, .captionsayer {
+.caption,
+.captionsayer {
   // margin-top: 1em;
   font-size: 2em;
   font-weight: 400;
@@ -100,5 +101,4 @@ export default {
 .slide_visible {
   opacity: 1;
 }
-
 </style>
