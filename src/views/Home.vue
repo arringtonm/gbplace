@@ -369,11 +369,17 @@ export default {
       display: none;
     }
   }
-  .block, .projects-holder, .quotes-holder, .carousel-container {
+  .block,
+  .projects-holder,
+  .quotes-holder,
+  .carousel-container {
     margin-bottom: 50px !important;
   }
   .upmargin {
     margin-top: 50px !important;
+  }
+  .gbarrington {
+    width: 18em !important;
   }
 }
 
@@ -467,7 +473,7 @@ img.project {
   }
 }
 .gbarrington {
-  width: 80vw;
+  width: 400px;
 }
 
 // ####################################################################
