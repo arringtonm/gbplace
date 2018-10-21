@@ -361,13 +361,24 @@ export default {
   .projects-overlay {
     font-size: 1.25em !important;
   }
+  .projectblock {
+    display: flex;
+    flex-direction: column !important;
+  }
   .left {
     width: 80vw !important;
+    margin-bottom: 50px !important;
   }
   .right {
     img {
-      display: none;
+      // display: none;
+      // margin-top: 50px;
+      width: 100% !important;
+
     }
+  }
+  .imagecredit {
+    // display: none;
   }
   .block,
   .projects-holder,
@@ -380,9 +391,6 @@ export default {
   }
   .gbarrington {
     width: 18em !important;
-  }
-  .imagecredit {
-    display: none;
   }
 }
 
