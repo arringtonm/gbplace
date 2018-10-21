@@ -6,7 +6,7 @@
     <div class="block projectblock">
       <div class="left">
         <span class="titlelong">{{ project.titlelong }}</span><br>
-        <span class="type">{{ project.type }}</span>
+        <span class="titlelong">{{ project.type }}</span>
         <p class="content">{{ project.content }}</p>
         <ul>
           <li v-for="item in project.bullets" :key="item">

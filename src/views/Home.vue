@@ -1,11 +1,8 @@
 <template>
   <div>
-    <!-- <Header :projectsTOD="projectsTOD" :projectsTDD="projectsTDD" :selectedTODProject="selectedTODProject" :selectedTDDProject="selectedTDDProject" /> -->
-
-<!-- header -->
     <div class="header">
       <div class="header-interior">
-        <img src="images/gbplacemakinglogolofi.png">
+        <img src="images/gbplacemakinglogolofi.png" class="logo">
         <div id="nav" class="dropdown">
           <a href="#">Home</a> |
           <span class="services-parent">
@@ -130,7 +127,8 @@ export default {
             "Reinventing the suburbs to become walkable urban places is a special challenge in creating vibrant communities. GB directed development of the plan now guiding the transformation of Tysons Corner, Virginia into America’s largest TOD. The plan, which incorporates 95% of all growth within a 3-minute walk of four Metrorail stops and three planned circulator routes, envisions 200,000 new jobs, 100,000 new residents, affordable housing, a dense street grid, and a network of parks. Since the plan’s completion, a $2.6 billion Metrorail extension has opened, developers have contributed $400 million and three new Fortune 500 companies have joined others in the area. The innovative plan has been widely heralded in the national media for creating a new model for suburban transformation. In 2011, the comprehensive plan received the Daniel Burnham Award, https://www.planning.org/awards/2011/ the American Planning Association’s (APA) most prestigious prize.",
           imagepath: "images/tysonsMap-min.jpg",
           imagecredit: "Fairfax County",
-          key: 1
+          key: 1,
+          type: "Transit Oriented Development"
         },
         portland: {
           title: "Groundbreaking TOD",
@@ -139,7 +137,8 @@ export default {
             "GB’s innovative work on TOD has served as a national model for how to link transit and land use to create livable communities. GB created and led the multi-jurisdictional TOD planning for Portland’s first two Light Rail Transit (LRT) lines – the east side and west side lines. Those station area plans have guided billions of dollars in TOD development around the stations. GB also created the TOD implementation programs for Portland’s transit agency, TriMet and Portland Metro, the regional government. TriMet estimates that $13.6 billion worth of development has occurred around its light rail stations.",
           imagepath: "images/RoundTitleslide1.jpg",
           imagecredit: false,
-          key: 2
+          key: 2,
+          type: "Transit Oriented Development"
         },
         bartTOD: {
           title: "Tomorrow's Best Practices",
@@ -153,7 +152,8 @@ export default {
           ],
           imagepath: "images/MinnTargetLRT+Northstar296.jpg",
           imageextra: "images/MissionBayKingSWEB-min.jpg",
-          key: 3
+          key: 3,
+          type: "Transit Oriented Development"
         },
         dubai: {
           title: "Audacious TOD",
@@ -163,7 +163,8 @@ export default {
           imagepath: "images/DubaiDay-min.jpg",
           imageextra: "images/DubaiPlot8-min.jpg",
           imagecredit: "Dubai RTA",
-          key: 4
+          key: 4,
+          type: "Transit Oriented Development"
         },
         effectsTOD: {
           title: "Cutting Edge Research",
@@ -178,16 +179,18 @@ export default {
           imagepath: "images/Parking-min.jpg",
           imageextra: "images/AmbroseTOD.Dallasweb_WC-min.jpg",
           imagecredit: false,
-          key: 5
+          key: 5,
+          type: "Transit Oriented Development"
         },
         todstrategies: {
-          title: "TOD implementation",
+          title: "TOD Implementation",
           titlelong: "Impactful TOD Strategies",
           content:
             "As TOD moves increasingly from planning theory to practice, agencies are increasingly seeking the insights to enhance their effectiveness in enabling TOD. GB’s experience is unparalleled in helping craft and deliver the right strategy for realizing TOD. He brings the critical knowledge gained from creating and managing the influential TOD programs at both Portland’s TriMet and Metro, and as the project manager of Maryland’s Governors Task Force on TOD, the District of Columbia’s Mayors TOD Task Force, Denver RTD’s TOD Strategic Plan, the Met Council TOD Strategic Plan, the Prince Georges County TOD Strategy and California’s Statewide TOD Study. This experience has taught him no two places are the same and what works in one community won’t necessarily work in another.",
           imagepath: "images/Denver_0028_-min.jpg",
           imagecredit: false,
-          key: 6
+          key: 6,
+          type: "Transit Oriented Development"
         }
       },
       projectsTDD: {
@@ -205,7 +208,8 @@ export default {
           ],
           imagepath: "images/Yizhuang06-min.jpg",
           imageextra: "images/VancouverNight2018-min.jpg",
-          key: 1
+          key: 1,
+          type: "Transit Designed For Development"
         },
         denver: {
           title: "Reshaping Transit",
@@ -215,7 +219,8 @@ export default {
           imagepath: "images/West_0006-min.jpg",
           imageextra: "images/DUS_StationTOD0002-min.jpg",
           imagecredit: false,
-          key: 2
+          key: 2,
+          type: "Transit Designed For Development"
         },
         westside: {
           title: "Leveraging a Subway",
@@ -225,7 +230,8 @@ export default {
           imagepath: "images/BeachSunSetdabs171a_edited-1.jpg",
           imageextra: "images/WilshireVermont52-min.jpg",
           imagecredit: false,
-          key: 3
+          key: 3,
+          type: "Transit Designed For Development"
         },
         highspeedrail: {
           title: "High Speed Rail",
@@ -241,7 +247,8 @@ export default {
           imagepath: "images/CAHSRcover-min.jpg",
           imageextra: "images/SunnySteps-min.jpg",
           imagecredit: false,
-          key: 4
+          key: 4,
+          type: "Transit Designed For Development"
         },
         target: {
           title: "Station + TOD",
@@ -251,7 +258,8 @@ export default {
           imagepath: "images/InterchangeMay2014-min.jpg",
           imageextra: "images/MinnTargetLRT+Northstar296.jpg",
           imagecredit: false,
-          key: 5
+          key: 5,
+          type: "Transit Designed For Development"
         },
         bart: {
           title: "Transforming Stations",
@@ -261,7 +269,8 @@ export default {
           imagepath: "images/ART.SouthBankMelbourne110-min.jpg",
           imageextra: "images/FruitvaleWeb0086-min.jpg",
           imagecredit: false,
-          key: 6
+          key: 6,
+          type: "Transit Designed For Development"
         }
       },
       slides: [
@@ -297,6 +306,80 @@ export default {
 </script>
 
 <style lang="scss">
+@media only screen and (max-width: 999px) {
+  body {
+    // background-color: #eee !important;
+  }
+  .block {
+    width: 80% !important;
+    // background-color: red;
+  }
+  .header-interior {
+    width: 80% !important;
+  }
+  #nav {
+    margin-right: 10px !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .logo {
+  }
+  .caption {
+    font-size: 1.5em !important;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  body {
+    // background-color: #ccc !important;
+  }
+
+  .caption {
+    font-size: 1.25em !important;
+  }
+  .quotes-holder {
+    margin-bottom: 25px !important;
+  }
+  .projects-overlay {
+    font-size: 1em !important;
+  }
+  .projects {
+    width: 50vw !important;
+    height: 20vw !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .header-interior {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    // background-color: red !important;
+  }
+  .logo {
+    // width: 100vw ;
+  }
+  .projects-overlay {
+    font-size: 1.25em !important;
+  }
+  .left {
+    width: 80vw !important;
+  }
+  .right {
+    img {
+      display: none;
+    }
+  }
+  .block, .projects-holder, .quotes-holder, .carousel-container {
+    margin-bottom: 50px !important;
+  }
+  .upmargin {
+    margin-top: 50px !important;
+  }
+}
+
+#nav2 {
+  display: none;
+}
 .block {
   width: 1000px;
   margin-left: auto;
@@ -370,7 +453,7 @@ img.project {
 .selected {
   z-index: 2;
   // background-color: rgba(255, 255, 255, 1);
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   // background-color:
   .projects-overlay {
     background-color: rgba(0, 0, 0, 0.5);
@@ -384,7 +467,7 @@ img.project {
   }
 }
 .gbarrington {
-  width: 400px;
+  width: 80vw;
 }
 
 // ####################################################################
@@ -437,7 +520,7 @@ p.services {
   display: none;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.97);
-  min-width: 400px;
+  min-width: 18em;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   // padding: 12px 16px;
   z-index: 5;
