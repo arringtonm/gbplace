@@ -381,6 +381,9 @@ export default {
   .gbarrington {
     width: 18em !important;
   }
+  .imagecredit {
+    display: none;
+  }
 }
 
 #nav2 {

@@ -18,7 +18,7 @@
         <img :src="project.imagepath">
         <img v-if="project.imageextra" :src="project.imageextra">
         <!-- v:bind for selected image -->
-        <span v-if="project.imagecredit">{{ project.imagecredit }}</span>
+        <span v-if="project.imagecredit" class="imagecredit">{{ project.imagecredit }}</span>
       </div>
     </div>
   </div>
@@ -40,6 +40,9 @@ export default {
 <style scoped lang="scss">
 li {
   margin-left: 1em;
+}
+.imagecredit {
+  font-size: 0.75em;
 }
 .projectinfo {
   display: flex;
