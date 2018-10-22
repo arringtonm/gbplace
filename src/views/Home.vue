@@ -331,7 +331,6 @@ export default {
 
 @media only screen and (max-width: 730px) {
   body {
-    // background-color: #ccc !important;
   }
 
   .caption {
@@ -353,10 +352,8 @@ export default {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    // background-color: red !important;
   }
   .logo {
-    // width: 100vw ;
   }
   .projects-overlay {
     font-size: 1.25em !important;
