@@ -126,6 +126,7 @@ export default {
           content:
             "Reinventing the suburbs to become walkable urban places is a special challenge in creating vibrant communities. GB directed development of the plan now guiding the transformation of Tysons Corner, Virginia into America’s largest TOD. The plan, which incorporates 95% of all growth within a 3-minute walk of four Metrorail stops and three planned circulator routes, envisions 200,000 new jobs, 100,000 new residents, affordable housing, a dense street grid, and a network of parks. Since the plan’s completion, a $2.6 billion Metrorail extension has opened, developers have contributed $400 million and three new Fortune 500 companies have joined others in the area. The innovative plan has been widely heralded in the national media for creating a new model for suburban transformation. In 2011, the comprehensive plan received the Daniel Burnham Award, https://www.planning.org/awards/2011/ the American Planning Association’s (APA) most prestigious prize.",
           imagepath: "images/tysonsMap-min.jpg",
+          imageextra: "images/TysonStationRoads-min.jpg",
           imagecredit: "Fairfax County",
           key: 1,
           type: "Transit Oriented Development"
@@ -135,7 +136,8 @@ export default {
           titlelong: "Created a model for TOD in Portland",
           content:
             "GB’s innovative work on TOD has served as a national model for how to link transit and land use to create livable communities. GB created and led the multi-jurisdictional TOD planning for Portland’s first two Light Rail Transit (LRT) lines – the east side and west side lines. Those station area plans have guided billions of dollars in TOD development around the stations. GB also created the TOD implementation programs for Portland’s transit agency, TriMet and Portland Metro, the regional government. TriMet estimates that $13.6 billion worth of development has occurred around its light rail stations.",
-          imagepath: "images/RoundTitleslide1.jpg",
+          imagepath: "images/TwoMaxMall0081WEB-min.jpg",
+          imageextra: "images/fenouilLOWERweb-min.jpg",
           imagecredit: false,
           key: 2,
           type: "Transit Oriented Development"
@@ -150,7 +152,7 @@ export default {
             "Joint Development solicitation – refined their solicitation process",
             "What BART desires in TOD – performance targets including minimum densities & no minimum parking"
           ],
-          imagepath: "images/MinnTargetLRT+Northstar296.jpg",
+          imagepath: "images/UCSF-min.jpg",
           imageextra: "images/MissionBayKingSWEB-min.jpg",
           key: 3,
           type: "Transit Oriented Development"
@@ -187,7 +189,8 @@ export default {
           titlelong: "Impactful TOD Strategies",
           content:
             "As TOD moves increasingly from planning theory to practice, agencies are increasingly seeking the insights to enhance their effectiveness in enabling TOD. GB’s experience is unparalleled in helping craft and deliver the right strategy for realizing TOD. He brings the critical knowledge gained from creating and managing the influential TOD programs at both Portland’s TriMet and Metro, and as the project manager of Maryland’s Governors Task Force on TOD, the District of Columbia’s Mayors TOD Task Force, Denver RTD’s TOD Strategic Plan, the Met Council TOD Strategic Plan, the Prince Georges County TOD Strategy and California’s Statewide TOD Study. This experience has taught him no two places are the same and what works in one community won’t necessarily work in another.",
-          imagepath: "images/Denver_0028_-min.jpg",
+          imagepath: "images/BLAKETODweb-min.jpg",
+          imageextra: "images/SafewayTOD.WMATA055WEB-min.jpg",
           imagecredit: false,
           key: 6,
           type: "Transit Oriented Development"
