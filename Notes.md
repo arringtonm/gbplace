@@ -28,7 +28,13 @@ Hours:
       3:00-3:45
 
 9/14 10:15-10:45
-9/18  4:30-     
+9/18  4:30-6:30
+
+~32.75 recorded.
+
+Estimate +15hrs.
+
+Quoting 30 hours + hosting etc costs.    
 
 
 
