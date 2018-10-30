@@ -34,8 +34,10 @@ Hours:
 
 Estimate +15hrs.
 
-Quoting 30 hours + hosting etc costs.    
+Quoting 30 hours + hosting etc costs.
+Fixed hosting cost $86.04    
 
+Total $686
 
 
 
